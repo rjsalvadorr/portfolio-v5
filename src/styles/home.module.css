@@ -1,0 +1,45 @@
+.link, .title {
+  margin-top: 0;
+  margin-bottom: 1.15rem;
+  text-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+  letter-spacing: 0.25rem;
+}
+
+.title {
+  color: #ffffff;
+  font-size: 3.33rem;
+}
+
+.link {
+  color: #ccc9c1;
+  font-size: 1.66rem;
+}
+
+@media (min-width: 768px) {
+  .link, .title {
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.5rem;
+  }
+
+  .title {
+    font-size: 5rem;
+  }
+  
+  .link {
+    font-size: 2.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .link, .title {
+    margin-bottom: 2rem;
+  }
+
+  .title {
+    font-size: 7rem;
+  }
+  
+  .link {
+    font-size: 2.75rem;
+  }
+}

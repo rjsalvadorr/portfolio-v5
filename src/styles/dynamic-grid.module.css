@@ -1,0 +1,28 @@
+/*******************************************************************************
+*  DYNAMIC GRID
+*******************************************************************************/
+
+.dynamicWrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -200;
+  background-color: #3c0a00;
+}
+
+.dynamicUnit {
+  position: absolute;
+}
+
+.dynamicInner {
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  background-color: #651200;
+  position: relative;
+  top: -24px;
+  left: -24px;
+  z-index: 31;
+}
