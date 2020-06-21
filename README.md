@@ -4,6 +4,10 @@
 
 ## Usage
 
+Using `npm` instead of `yarn` on this one.
+
+### commands
+
 - `npm start` or `npm run develop`: usual dev'ing
 - `npm run build`: builds site for deployment
 - `npm run build-serve`: builds site for deployment, then runs `http-server` for quick local testing

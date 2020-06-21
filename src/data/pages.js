@@ -19,7 +19,7 @@ const pages = [
   },
   {
     id: 3,
-    name: 'Art / Blog',
+    name: 'Blog',
     section: 'artblog',
     path: '/artblog',
   },
