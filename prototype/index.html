@@ -18,35 +18,39 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/portfolio.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
 
-  <header class="header">
-    <h1 class="header__title">RJ Salvador</h1>
-    <nav class="nav-bar">
-      <div class="nav-bar__link">
-        <a href="http://example.com/">Code</a>
-      </div>
-      <div class="nav-bar__link">
-        <a href="http://example.com/">Music</a>
-      </div>
-      <div class="nav-bar__link">
-        <a href="http://example.com/">Blog</a>
-      </div>
-    </nav>
-  </header>
   <main class="main">
+    <header class="header card">
+      <h1 class="header__title">RJ Salvador</h1>
+      <nav class="nav-bar">
+        <div class="nav-bar__link">
+          <a href="http://example.com/">Code</a>
+        </div>
+        <div class="nav-bar__link">
+          <a href="http://example.com/">Music</a>
+        </div>
+        <div class="nav-bar__link">
+          <a href="http://example.com/">Blog</a>
+        </div>
+      </nav>
+    </header>
     <section class="main-content">
-      <p class="main-content__intro">
-        Bacon ipsum dolor amet consectetur cupidatat ut sint fugiat, et aute aliquip chuck tempor. Ipsum shankle esse id
-        magna. Cow adipisicing pork belly shankle, corned beef ball tip labore doner officia flank sed ham tempor ut.
-        Quis consectetur shank shoulder frankfurter beef ribs chuck magna deserunt biltong kielbasa culpa. Adipisicing
-        pork belly chuck, burgdoggen pancetta short ribs shank quis cillum et veniam id exercitation lorem. Burgdoggen
-        tenderloin tail id mollit minim short ribs leberkas aliquip pancetta.
-      </p>
+      <div class="card">
+        <p class="main-content__intro">
+          Bacon ipsum dolor amet consectetur cupidatat ut sint fugiat, et aute aliquip chuck tempor. Ipsum shankle esse
+          id
+          magna. Cow adipisicing pork belly shankle, corned beef ball tip labore doner officia flank sed ham tempor ut.
+          Quis consectetur shank shoulder frankfurter beef ribs chuck magna deserunt biltong kielbasa culpa. Adipisicing
+          pork belly chuck, burgdoggen pancetta short ribs shank quis cillum et veniam id exercitation lorem. Burgdoggen
+          tenderloin tail id mollit minim short ribs leberkas aliquip pancetta.
+        </p>
+      </div>
 
       <div class="card">
         <header class="card-header">
@@ -111,11 +115,16 @@
 
     </section>
     <div class="main-background">
+      <div class="background-overlay"></div>
+      <video class="background-video" playsinline autoplay loop muted>
+        <source src="assets/bg-test.mp4" type="video/mp4">
+        Sorry, your browser doesn't support embedded videos.
+      </video>
     </div>
+    <footer class="footer">
+      <span>copyright 2020</span>
+    </footer>
   </main>
-  <footer class="footer">
-    <span>copyright 2020</span>
-  </footer>
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>

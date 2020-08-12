@@ -1,0 +1,37 @@
+
+body {
+  background-color: #eeeeee;
+}
+
+.main {
+  min-height: 100vh;
+  padding: 2em;
+}
+
+.main-background {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -100;
+}
+
+.background-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 1em;
+  margin: 4em 0;
+  border-radius: 4px;
+  max-width: 66%;
+}
