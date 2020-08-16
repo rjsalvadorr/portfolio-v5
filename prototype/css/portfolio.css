@@ -5,6 +5,32 @@ body {
 
 .main {
   min-height: 100vh;
+}
+
+.main-header {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 0.5em;
+}
+
+.nav-bar {
+  display: flex;
+}
+
+.nav-bar__link {
+  flex: 0 1 25%;
+  text-align: center;
+  color: #ffffff;
+}
+
+.nav-bar__link .nav-link {
+  color: #ffffff;
+}
+
+.nav-bar .header__title {
+  margin: 0;
+}
+
+.main-content {
   padding: 2em;
 }
 
@@ -30,8 +56,32 @@ body {
 
 .card {
   background-color: rgba(255, 255, 255, 0.6);
-  padding: 1em;
-  margin: 4em 0;
-  border-radius: 4px;
+  /* padding: 1em; */
+  margin-top: 0;
+  margin-right: 33%;
+  margin-bottom: 8em;
+  margin-left: 0;
+  border-radius: 3px;
   max-width: 66%;
+}
+
+section.main-content > div:nth-child(even) {
+  margin-left: 33%;
+  margin-right: 0;
+}
+
+.card .card-header {
+  padding: 0.67em 1em;
+}
+
+.card .card-header__label {
+  margin: 0;
+}
+
+.card .card-content__image {
+  width: 100%;
+}
+
+.card .card-content__text {
+  padding: 1em;
 }
