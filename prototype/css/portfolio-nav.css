@@ -1,0 +1,31 @@
+.nav-bar {
+  display: flex;
+}
+
+.nav-bar__link-wrapper {
+  padding: 0.6em 0;
+  flex: 0 1 25%;
+  text-align: center;
+  color: #111111;
+}
+
+.nav-bar__link-wrapper--title {
+  text-align: left;
+}
+
+.nav-bar__link-wrapper .header__title,
+.nav-bar__link-wrapper .nav-link {
+  color: inherit;
+  line-height: normal;
+  margin: 0;
+}
+
+.nav-bar__link-wrapper .header__title {
+  font-size: 2em;
+}
+
+.nav-bar__link-wrapper .nav-link {
+  font-size: 1.6em;
+  vertical-align: text-top;
+  text-decoration: none;
+}
