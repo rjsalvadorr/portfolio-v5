@@ -13,10 +13,22 @@
 
 .card .card-header {
   padding: 0.67em 1em;
+  position: relative;
+}
+
+.card .card-header .tags-wrapper {
+  position: absolute;
+  top: 0.67em;
+  right: 1em;
 }
 
 .card .card-header__label {
   margin: 0;
+}
+
+.card .card-header__date {
+  font-size: 0.8em;
+  letter-spacing: 0.04em;
 }
 
 .card .card-content__image {
