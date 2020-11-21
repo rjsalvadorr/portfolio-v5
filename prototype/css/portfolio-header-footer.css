@@ -5,15 +5,15 @@
 }
 
 .main-header {
-  padding: 0 2em;
-  -webkit-box-shadow: -2px 0 4px rgba(0,0,0,0.6);
-  -moz-box-shadow: -2px 0 4px rgba(0,0,0,0.6);
-  box-shadow: -2px 0 4px rgba(0,0,0,0.6);
+  padding: 0 1.25em;
+  -webkit-box-shadow: -2px 0 4px rgba(0,0,0,0.75);
+  -moz-box-shadow: -2px 0 4px rgba(0,0,0,0.75);
+  box-shadow: -2px 0 4px rgba(0,0,0,0.75);
 }
 
 .main-footer {
-  padding: 0.8em 2em;
-  -webkit-box-shadow: 2px 0 4px rgba(0,0,0,0.6);
-  -moz-box-shadow: 2px 0 4px rgba(0,0,0,0.6);
-  box-shadow: 2px 0 4px rgba(0,0,0,0.6);
+  padding: 1em 1.25em;
+  -webkit-box-shadow: 2px 0 4px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 0 4px rgba(0,0,0,0.75);
+  box-shadow: 2px 0 4px rgba(0,0,0,0.75);
 }
