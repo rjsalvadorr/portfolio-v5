@@ -9,7 +9,16 @@ body {
 }
 
 .main-content {
-  padding: 0 2em;
+  margin-left: 33%;
+  margin-right: 0;
+  background-color: #000088;
+  -webkit-box-shadow: -4px 4px 12px 2px rgba(0,0,0,0.8);
+  -moz-box-shadow: -4px 4px 12px 2px rgba(0,0,0,0.8);
+  box-shadow: -4px 4px 12px 2px rgba(0,0,0,0.8);
+}
+
+.main-cards {
+  padding: 0 1em;
 }
 
 .main-background {
@@ -31,7 +40,6 @@ body {
   z-index: 0;
 }
 
-section.main-content > div:nth-child(even) {
-  margin-left: 33%;
-  margin-right: 0;
+.card {
+  margin: 1em 0;
 }

@@ -5,7 +5,7 @@
 .nav-bar__link-wrapper {
   flex: 0 1 25%;
   text-align: center;
-  color: #283149;
+  color: #ffffff;
 }
 
 .nav-bar__link-wrapper--title {
@@ -40,14 +40,9 @@
   vertical-align: text-top;
 }
 
-.nav-link:link,
-.nav-link:visited {
-  background-color: #dbedf3;
-}
-
 .nav-link:focus,
 .nav-link:hover,
 .nav-link:active,
 .nav-link.nav-link--active {
-  background-color: #c5d5da;
+  color: #aaaaff;
 }
