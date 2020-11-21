@@ -1,7 +1,11 @@
 .card {
-  background-color: #dbedf3;
+  background-color: #D8DFE2;
+  /* background-color: #71ADB5; */
   color: #283149;
-  border-radius: 0.25em;
+  border-radius: 0.15em;
+  -webkit-box-shadow: -2px 2px 3px rgba(0,0,0,0.4);
+  -moz-box-shadow: -2px 2px 3px rgba(0,0,0,0.4);
+  box-shadow: -2px 2px 3px rgba(0,0,0,0.4);
 }
 
 .card .card-header {

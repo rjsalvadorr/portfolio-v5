@@ -1,13 +1,19 @@
 .main-header,
 .main-footer {
-  background-color: #0000ff;
+  background-color: #0D3446;
   color: #ffffff;
 }
 
 .main-header {
   padding: 0 2em;
+  -webkit-box-shadow: -2px 0 4px rgba(0,0,0,0.6);
+  -moz-box-shadow: -2px 0 4px rgba(0,0,0,0.6);
+  box-shadow: -2px 0 4px rgba(0,0,0,0.6);
 }
 
 .main-footer {
   padding: 0.8em 2em;
+  -webkit-box-shadow: 2px 0 4px rgba(0,0,0,0.6);
+  -moz-box-shadow: 2px 0 4px rgba(0,0,0,0.6);
+  box-shadow: 2px 0 4px rgba(0,0,0,0.6);
 }

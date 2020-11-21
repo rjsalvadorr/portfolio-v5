@@ -11,7 +11,7 @@ body {
 .main-content {
   margin-left: 33%;
   margin-right: 0;
-  background-color: #000088;
+  background-color: #176D81;
   -webkit-box-shadow: -4px 4px 12px 2px rgba(0,0,0,0.8);
   -moz-box-shadow: -4px 4px 12px 2px rgba(0,0,0,0.8);
   box-shadow: -4px 4px 12px 2px rgba(0,0,0,0.8);
@@ -41,5 +41,5 @@ body {
 }
 
 .card {
-  margin: 1em 0;
+  margin: 3em 0;
 }
