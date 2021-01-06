@@ -3,9 +3,9 @@
 module.exports = {
   url: 'https://lumen.netlify.com',
   pathPrefix: '/',
-  title: 'Blog by John Doe',
-  subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
-  copyright: '© All rights reserved.',
+  title: 'reluctant adjustments',
+  subtitle: 'blog by RJ Salvador',
+  copyright: '© All rights reserved',
   disqusShortname: '',
   postsPerPage: 4,
   googleAnalyticsId: 'UA-73379983-2',
@@ -25,9 +25,9 @@ module.exports = {
     }
   ],
   author: {
-    name: 'John Doe',
-    photo: '/photo.jpg',
-    bio: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    name: 'RJ Salvador',
+    photo: '/wat.jpg',
+    bio: 'Clan in the front, let ya feet stomp. Ninjas in the back, brag shit to death',
     contacts: {
       email: '',
       facebook: '#',

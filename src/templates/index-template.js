@@ -8,6 +8,7 @@ import Page from '../components/Page';
 import Pagination from '../components/Pagination';
 import { useSiteMetadata } from '../hooks';
 import type { PageContext, AllMarkdownRemark } from '../types';
+import bgVid01 from '../assets/vid/bg-test-1.mp4';
 
 type Props = {
   data: AllMarkdownRemark,
@@ -30,7 +31,12 @@ const IndexTemplate = ({ data, pageContext }: Props) => {
 
   return (
     <Layout title={pageTitle} description={siteSubtitle}>
-      <div className="main-background"></div>
+      <div className="main-background">
+        <video className="background-video" autoPlay playsInline loop muted>
+          <source src={bgVid01} type="video/mp4" />
+          Sorry, your browser doesn't support embedded videos.
+        </video>
+      </div>
       <div className="main-drawer">
         <Sidebar isIndex />
         <Page>
