@@ -30,16 +30,19 @@ const IndexTemplate = ({ data, pageContext }: Props) => {
 
   return (
     <Layout title={pageTitle} description={siteSubtitle}>
-      <Sidebar isIndex />
-      <Page>
-        <Feed edges={edges} />
-        <Pagination
-          prevPagePath={prevPagePath}
-          nextPagePath={nextPagePath}
-          hasPrevPage={hasPrevPage}
-          hasNextPage={hasNextPage}
-        />
-      </Page>
+      <div className="main-background"></div>
+      <div className="main-drawer">
+        <Sidebar isIndex />
+        <Page>
+          <Feed edges={edges} />
+          <Pagination
+            prevPagePath={prevPagePath}
+            nextPagePath={nextPagePath}
+            hasPrevPage={hasPrevPage}
+            hasNextPage={hasNextPage}
+          />
+        </Page>
+      </div>
     </Layout>
   );
 };
