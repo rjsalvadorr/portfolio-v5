@@ -1,6 +1,7 @@
 /** 
- * Generic
+ * RJ Portfolio overrides
  */
+
  html {
   font-size: $typographic-root-font-size;
 }
@@ -24,8 +25,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $typographic-font-family;
-  font-weight: 600;
+  font-family: $typographic-font-family-heading;
+  font-weight: 700;
 }
 
 h1 {

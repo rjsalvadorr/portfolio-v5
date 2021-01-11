@@ -16,11 +16,11 @@ module.exports = {
       path: '/'
     },
     {
-      label: 'About me',
+      label: 'About',
       path: '/pages/about'
     },
     {
-      label: 'Contact me',
+      label: 'Contact',
       path: '/pages/contacts'
     }
   ],
@@ -29,15 +29,15 @@ module.exports = {
     photo: '/wat.jpg',
     bio: 'Clan in the front, let ya feet stomp. Ninjas in the back, brag shit to death',
     contacts: {
-      email: '',
-      facebook: '#',
-      telegram: '#',
-      twitter: '#',
-      github: '#',
+      email: 'rjsalvadorr@gmail.com',
+      facebook: '',
+      telegram: '',
+      twitter: 'flapsnacc',
+      github: 'rjsalvadorr',
+      linkedin: 'rjsalvadorr',
+      instagram: '',
       rss: '',
       vkontakte: '',
-      linkedin: '#',
-      instagram: '#',
       line: '',
       gitlab: '',
       weibo: '',

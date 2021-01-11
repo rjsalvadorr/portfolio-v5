@@ -34,6 +34,8 @@ const Layout = ({
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={metaImageUrl} />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Gentium+Basic:wght@700&family=Open+Sans&display=swap" rel="stylesheet" />
       </Helmet>
       {children}
     </div>
