@@ -37,7 +37,7 @@ const IndexTemplate = ({ data, pageContext }: Props) => {
           Sorry, your browser doesn't support embedded videos.
         </video>
       </div>
-      <div className="main-drawer">
+      <div className="main-content">
         <Sidebar isIndex />
         <Page>
           <Feed edges={edges} />

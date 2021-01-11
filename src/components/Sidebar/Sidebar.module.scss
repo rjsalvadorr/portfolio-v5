@@ -6,28 +6,37 @@
     &__inner {
         position: relative;
         padding: 20px;
+        margin: 32px;
+        color: $color-212648-lightest;
+        background-color: $color-212648-darkest;
     }
-    color: $color-212648-lightest;
-    background-color: $color-212648-darkest;
+    position: relative;
+    z-index: 2000;
 }
 
 @include breakpoint-sm {
     .sidebar {
-        lost-column: 2/7 4 0;
-        border-bottom-right-radius: 8px;
+        lost-column: 1/3 4 0;
 
         &__inner {
+            width: 50%;
+            margin: 0 0 0 auto;
             padding: 30px;
+            -webkit-box-shadow: 0 0 16px rgba(0,0,0,0.5);
+            -moz-box-shadow: 0 0 16px rgba(0,0,0,0.5);
+            box-shadow: 0 0 16px rgba(0,0,0,0.5);
         }
     }
 }
 
 @include breakpoint-md {
-    .sidebar {
-        lost-column: 1/3 4 0;
+    .sidebar__inner {
+        width: 33%;
+    }
+}
 
-        &__inner {
-            padding: 40px;
-        }
+@include breakpoint-lg {
+    .sidebar__inner {
+        width: 25%;
     }
 }
