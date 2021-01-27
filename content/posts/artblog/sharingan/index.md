@@ -2,7 +2,7 @@
 title: Sharingan Paintings
 subtitle:
 date: 2019-03-24 13:35:57
-type: post
+template: post
 category: art
 thumbnail: ./thumb.jpg
 slug: "humane-typography-in-the-digital-age"

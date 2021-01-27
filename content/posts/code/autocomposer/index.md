@@ -2,7 +2,7 @@
 title: AutoComposer
 subtitle:
 date: 2017-04-30 13:22:43
-type: post
+template: post
 category: software
 thumbnail: ./thumb.png
 slug: "humane-typography-in-the-digital-age"

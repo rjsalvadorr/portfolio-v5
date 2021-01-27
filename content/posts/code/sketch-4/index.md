@@ -2,7 +2,7 @@
 title: sketch no. 4
 subtitle:
 date: 2019-05-15 12:00:00
-type: post
+template: post
 category: software
 thumbnail: ./thumb.jpg
 options:

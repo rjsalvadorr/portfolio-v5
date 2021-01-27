@@ -2,7 +2,7 @@
 title: sketch no. 7
 subtitle:
 date: 2020-01-29 12:00:00
-type: post
+template: post
 category: software
 thumbnail: ./thumb.jpg
 options:

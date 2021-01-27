@@ -2,7 +2,7 @@
 title: guitarragrams
 subtitle: Guitar chord diagrams
 date: 2018-09-23 18:02:06
-type: post
+template: post
 category: software
 thumbnail: ./snapshot.png
 slug: "humane-typography-in-the-digital-age"

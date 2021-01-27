@@ -2,7 +2,7 @@
 title: SnackWatcher
 subtitle: Fall 2015 to Spring 2016
 date: 2017-01-08 17:10:50
-type: post
+template: post
 category: software
 thumbnail: ./thumb.jpg
 options:

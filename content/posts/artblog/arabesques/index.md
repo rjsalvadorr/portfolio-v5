@@ -2,7 +2,7 @@
 title: Arabesques
 subtitle:
 date: 2017-03-29 17:09:42
-type: post
+template: post
 category: art
 thumbnail: ./thumb.jpg
 slug: "humane-typography-in-the-digital-age"
