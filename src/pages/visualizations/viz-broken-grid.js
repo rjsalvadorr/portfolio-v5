@@ -1,7 +1,7 @@
 import React from 'react';
 import {graphql} from 'gatsby';
 
-import Layout from '../../components/layout';
+import Layout from '../../components/Layout';
 import BrokenGrid from '../../components/visualizations/broken-grid';
 import vizStyles from '../../styles/visualizations.module.css';
 
