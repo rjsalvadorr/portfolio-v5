@@ -13,8 +13,8 @@ Randoms from my sketchbooks.
 
 <!-- more -->
 
-![yep yep yep](./sketch-facepalm.jpg "yep yep")
+![yep yep yep](/media/artblog/sketches/sketch-facepalm.jpg "yep yep")
 
-![yep yep yep](./sketch_crane_fish.jpg "yep yep")
+![yep yep yep](/media/artblog/sketches/sketch_crane_fish.jpg "yep yep")
 
-![yep yep yep](./sketch-pigeon.jpg "yep yep")
+![yep yep yep](/media/artblog/sketches/sketch-pigeon.jpg "yep yep")

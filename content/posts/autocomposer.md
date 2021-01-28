@@ -11,7 +11,7 @@ description: "I've always wanted to make software that did something with music.
 
 I've always wanted to make software that did something with music. <!-- more --> That led me to play with JS libraries out there that can handle music theory, playback, and notation. Slowly, I started to think of ways to tie this all together to build an automatic music composer.
 
-![yep yep yep](./autocomposer-sketch-02.jpg "yep yep")
+![yep yep yep](/media/code/autocomposer/autocomposer-sketch-02.jpg "yep yep")
 
 I had a few features in mind when building this:
 
@@ -21,7 +21,7 @@ I had a few features in mind when building this:
 
 Maybe it'd be a useful tool for exploring different ways to move through a chord progression. Or for brainstorming when writing a musical composition.
 
-![yep yep yep](./autocomposer-sketch-03.jpg "yep yep")
+![yep yep yep](/media/code/autocomposer/autocomposer-sketch-03.jpg "yep yep")
 
 ## Tools used
 
@@ -53,7 +53,7 @@ The easiest way to create a smooth melody that sounds good when played with chor
 Take a look at [rj-salvador.com/apps/autocomposer/](http://www.rj-salvador.com/apps/autocomposer/)  
 For more info, check out the [project wiki](https://github.com/rjsalvadorr/autocomposer-js/wiki) and [repository](https://github.com/rjsalvadorr/autocomposer-js).
 
-![yep yep yep](./snapshot.png "yep yep")
+![yep yep yep](/media/code/autocomposer/snapshot.png "yep yep")
 
 The AutoComposer is doing exactly what I want it to do. And it turns out that modern Javascript is really fun to play with! Although I have a lot more in mind for the AutoComposer, and a web browser might not be the best environment for those future plans. I may expand the music generation code and have it run on a proper web server so I can do more complicated (and exciting) things with music and code.
 

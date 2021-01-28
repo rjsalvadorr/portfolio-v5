@@ -35,9 +35,9 @@ And also if we have different types of terrain
 
 No problem, that's gonna be easy. I'm a software magician now.
 
-![yep yep yep](./broquest-sketch-01.jpg "yep yep")
+![yep yep yep](/media/code/broquest/broquest-sketch-01.jpg "yep yep")
 
-![yep yep yep](./broquest-sketch-02.jpg "yep yep")
+![yep yep yep](/media/code/broquest/broquest-sketch-02.jpg "yep yep")
 
 ## Process
 
@@ -52,13 +52,13 @@ Over a few weeks, I learned how to assemble all these elements together:
 1. Controls to let the player move and interact with world by opening things and slaying NPCs
 1. Primitive AI. Yeah, all these guys did is move towards my character in a straight line and attack if I'm close enough. But they were doing these things automatically
 
-![yep yep yep](./broquest-dead.jpg "yep yep")
+![yep yep yep](/media/code/broquest/broquest-dead.jpg "yep yep")
 
-![yep yep yep](./broquest-debug.jpg "yep yep")
+![yep yep yep](/media/code/broquest/broquest-debug.jpg "yep yep")
 
-![yep yep yep](./broquest-01.jpg "yep yep")
+![yep yep yep](/media/code/broquest/broquest-01.jpg "yep yep")
 
-![yep yep yep](./broquest-spritesheet.png "yep yep")
+![yep yep yep](/media/code/broquest/broquest-spritesheet.png "yep yep")
 
 ## Results
 

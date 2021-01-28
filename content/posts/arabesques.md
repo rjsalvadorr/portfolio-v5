@@ -15,6 +15,6 @@ I painted these after a vacation to Egypt. The art and architecture of Old Cairo
 
 Both works are acrylic on canvas (24" x 18"), finished with semi-gloss varnish.
 
-![yep yep yep](./RJS-001-levant-one.jpg "yep yep")
+![yep yep yep](/media/artblog/arabesques/RJS-001-levant-one.jpg "yep yep")
 
-![yep yep yep](./RJS-002-levant-two.jpg "yep yep")
+![yep yep yep](/media/artblog/arabesques/RJS-002-levant-two.jpg "yep yep")

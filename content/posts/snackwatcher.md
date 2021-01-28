@@ -35,10 +35,10 @@ Upon joining the SnackWatcher team, I worked on the user-facing parts of the sys
 
 It worked! Even if it was easily confused by what we put on the table, it worked!
 
-![yep yep yep](./snackwatcher-setup.jpg "yep yep")
+![yep yep yep](/media/code/snackwatcher/snackwatcher-setup.jpg "yep yep")
 
-![yep yep yep](./snackwatcher-interface.png "yep yep")
+![yep yep yep](/media/code/snackwatcher/snackwatcher-interface.png "yep yep")
 
-![yep yep yep](./snackwatcher-slack.png "yep yep")
+![yep yep yep](/media/code/snackwatcher/snackwatcher-slack.png "yep yep")
 
 For more details, feel free to check out the [GitHub repo](https://github.com/jonahgroup/SnackWatcher) and [blog](https://jonahgroup.github.io/SnackWatcher/) for the project.

@@ -12,11 +12,11 @@ I watched a Naruto marathon a few months ago, so I was destined to make some fan
 
 Behold:
 
-![yep yep yep](./full.jpg "yep yep")
+![yep yep yep](/media/artblog/sharingan/full.jpg "yep yep")
 
-![yep yep yep](./kakashi-closeup.jpg "yep yep")
+![yep yep yep](/media/artblog/sharingan/kakashi-closeup.jpg "yep yep")
 
-![yep yep yep](./sasuke-closeup.jpg "yep yep")
+![yep yep yep](/media/artblog/sharingan/sasuke-closeup.jpg "yep yep")
 
 ## Materials/media
 
@@ -28,7 +28,7 @@ They're all acrylic on canvas (24" x 12"), finished with semi-gloss varnish.
 1. Acrylic paint
 1. Acrylic varnish
 
-![yep yep yep](./sasuke-table.jpg "yep yep")
+![yep yep yep](/media/artblog/sharingan/sasuke-table.jpg "yep yep")
 
 ## The Process
 
@@ -39,8 +39,8 @@ They're all acrylic on canvas (24" x 12"), finished with semi-gloss varnish.
 1. Clean up mistakes
 1. Varnish (2 to 3 coats)
 
-![yep yep yep](./kakashi-process.gif "yep yep")
+![yep yep yep](/media/artblog/sharingan/kakashi-process.gif "yep yep")
 
-![yep yep yep](./itachi-process-2.gif "yep yep")
+![yep yep yep](/media/artblog/sharingan/itachi-process-2.gif "yep yep")
 
-![yep yep yep](./sasuke-process.gif "yep yep")
+![yep yep yep](/media/artblog/sharingan/sasuke-process.gif "yep yep")
