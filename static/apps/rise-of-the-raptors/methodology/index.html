@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Methodology | Rise of the Raptors</title>
+    <meta name="description" content="Infographics on the Toronto Raptors&#39; path to a championship">
+    <link rel="icon" href="/apps/rise-of-the-raptors/icons/icon.png">
+  <meta name="theme-color" content="#3eaf7c">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="apple-touch-icon" href="/apps/rise-of-the-raptors/icons/icon.png">
+  <link rel="mask-icon" href="/apps/rise-of-the-raptors/icons/icon.png" color="#3eaf7c">
+  <meta name="msapplication-TileImage" content="/icons/icon.png">
+  <meta name="msapplication-TileColor" content="#000000">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee+Shade|Open+Sans:400&amp;display=swap">
+    
+    <link rel="preload" href="/apps/rise-of-the-raptors/assets/css/0.styles.816f4d5c.css" as="style"><link rel="preload" href="/apps/rise-of-the-raptors/assets/js/app.c23aba86.js" as="script"><link rel="preload" href="/apps/rise-of-the-raptors/assets/js/6.6b71d2f4.js" as="script"><link rel="preload" href="/apps/rise-of-the-raptors/assets/js/8.f3ce46d4.js" as="script"><link rel="prefetch" href="/apps/rise-of-the-raptors/assets/js/1.bc699ea6.js"><link rel="prefetch" href="/apps/rise-of-the-raptors/assets/js/10.b30fa24d.js"><link rel="prefetch" href="/apps/rise-of-the-raptors/assets/js/11.129ccb4f.js"><link rel="prefetch" href="/apps/rise-of-the-raptors/assets/js/12.fbdae37b.js"><link rel="prefetch" href="/apps/rise-of-the-raptors/assets/js/13.3ad67ccd.js"><link rel="prefetch" href="/apps/rise-of-the-raptors/assets/js/14.f33f7ab1.js"><link rel="prefetch" href="/apps/rise-of-the-raptors/assets/js/15.960cc01c.js"><link rel="prefetch" href="/apps/rise-of-the-raptors/assets/js/2.f1e8eae1.js"><link rel="prefetch" href="/apps/rise-of-the-raptors/assets/js/4.75d6d5a0.js"><link rel="prefetch" href="/apps/rise-of-the-raptors/assets/js/5.144caaf7.js"><link rel="prefetch" href="/apps/rise-of-the-raptors/assets/js/7.095f75c1.js"><link rel="prefetch" href="/apps/rise-of-the-raptors/assets/js/9.cdca2608.js">
+    <link rel="stylesheet" href="/apps/rise-of-the-raptors/assets/css/0.styles.816f4d5c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container theme-container--methodology" data-v-4b228620><div class="theme-content" data-v-4b228620><div class="content-wrapper content-wrapper--methodology" data-v-4b228620> <div class="text-wrapper" data-v-4b228620><div class="content__default" data-v-4b228620><h1 id="methodology"><a href="#methodology" aria-hidden="true" class="header-anchor">#</a> Methodology</h1> <p>The season summary graphic is designed to show every NBA team's <em>strength</em> compared to all others
+for a given season. Each team is represented by a circle, with the champion team being the largest one.</p> <p><em>Strength</em> in this case, is roughly defined as:</p> <blockquote><p><em>regular season win rate + playoff wins, compared to the season's champions</em></p></blockquote> <p>For the exact calculation in the code:</p> <div class="language- extra-class"><pre class="language-text"><code>// pWins is a ratio of playoff wins to max. possible playoff wins
+// wRate is the regular season win-rate (as a value between 0 and 1)
+// overallRtg is expected to be a float between 0 and 1, and is used like a percent value
+
+let overallRtg = (wRate + wRate + pWins) / 3;
+
+// the championship team receives a 20% overallRtg boost, to
+// highlight them on the graphic
+
+if(rec.champion) {
+  overallRtg += 0.2;
+}
+</code></pre></div><p>This kind of comparison easily shows the competitive balance between teams in a given season. At a glance, we can see how the 1995-1996 Chicago Bulls and the 2016-2017 Golden State Warriors simply dominated the league's landscape.</p> <h2 id="_1995-1996-nba-season"><a href="#_1995-1996-nba-season" aria-hidden="true" class="header-anchor">#</a> 1995-1996 NBA season</h2> <p><img src="/apps/rise-of-the-raptors/assets/img/95-96.97e7e570.png" alt="1995-1996 NBA season" title="1995-1996 NBA season"></p> <h2 id="_2016-2017-nba-season"><a href="#_2016-2017-nba-season" aria-hidden="true" class="header-anchor">#</a> 2016-2017 NBA season</h2> <p><img src="/apps/rise-of-the-raptors/assets/img/16-17.a4efcda9.png" alt="2016-2017 NBA season" title="2016-2017 NBA season"></p> <p>This can be contrasted with the 2009-2010 or 2018-2019 seasons, where the Lakers and Raptors (respectively) won their championship without that level of dominance, or were just competing in a relatively balanced league.</p> <h2 id="_2009-2010-nba-season"><a href="#_2009-2010-nba-season" aria-hidden="true" class="header-anchor">#</a> 2009-2010 NBA season</h2> <p><img src="/apps/rise-of-the-raptors/assets/img/09-10.68f598c0.png" alt="2009-2010 NBA season" title="2009-2010 NBA season"></p> <h2 id="_2018-2019-nba-season"><a href="#_2018-2019-nba-season" aria-hidden="true" class="header-anchor">#</a> 2018-2019 NBA season</h2> <p><img src="/apps/rise-of-the-raptors/assets/img/18-19.39dd8369.png" alt="2018-2019 NBA season" title="2018-2019 NBA season"></p></div></div></div></div> <!----></div><div class="global-ui"></div></div>
+    <script src="/apps/rise-of-the-raptors/assets/js/app.c23aba86.js" defer></script><script src="/apps/rise-of-the-raptors/assets/js/6.6b71d2f4.js" defer></script><script src="/apps/rise-of-the-raptors/assets/js/8.f3ce46d4.js" defer></script>
+  </body>
+</html>
