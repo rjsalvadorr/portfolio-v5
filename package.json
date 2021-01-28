@@ -41,6 +41,7 @@
     "@sentry/gatsby": "^5.27.6",
     "@sentry/tracing": "^5.27.6",
     "bluebird": "^3.7.2",
+    "chroma-js": "^2.1.0",
     "classnames": "^2.2.6",
     "codecov": "^3.8.1",
     "gatsby": "^2.27.4",
@@ -80,7 +81,8 @@
     "react": "^17.0.1",
     "react-disqus-comments": "^1.4.0",
     "react-dom": "^17.0.1",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "three": "^0.125.1"
   },
   "devDependencies": {
     "@babel/core": "7.12.3",
