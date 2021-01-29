@@ -116,6 +116,7 @@ module.exports = {
               withWebp: true
             }
           },
+          'gatsby-remark-static-images',
           {
             resolve: 'gatsby-remark-responsive-iframe',
             options: { wrapperStyle: 'margin-bottom: 1.0725rem' }
@@ -186,7 +187,7 @@ module.exports = {
         background_color: '#FFF',
         theme_color: '#F7A046',
         display: 'standalone',
-        icon: 'static/photo.jpg'
+        icon: 'static/rj-icon.png'
       },
     },
     'gatsby-plugin-offline',

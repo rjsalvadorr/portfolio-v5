@@ -32,10 +32,10 @@
     lost-column: 2/3 4 0;
     height: 100vh;
     overflow-y: auto;
-    -webkit-box-shadow: 0 0 16px rgba(0,0,0,0.5);
-    -moz-box-shadow: 0 0 16px rgba(0,0,0,0.5);
-    box-shadow: 0 0 16px rgba(0,0,0,0.5);
     background-color: $color-212648-light;
+    -webkit-box-shadow: 0 0 16px $col-box-shadow-light;
+    -moz-box-shadow: 0 0 16px $col-box-shadow-light;
+    box-shadow: 0 0 16px $col-box-shadow-light;
 
     &__inner {
       padding: 30px 20px;

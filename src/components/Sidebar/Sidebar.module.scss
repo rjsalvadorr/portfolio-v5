@@ -9,6 +9,9 @@
         margin: 32px;
         color: $color-212648-lightest;
         background-color: $color-212648-darkest;
+        -webkit-box-shadow: 0 0 16px $col-box-shadow;
+        -moz-box-shadow: 0 0 16px $col-box-shadow;
+        box-shadow: 0 0 16px $col-box-shadow;
     }
     position: relative;
     z-index: 2000;
@@ -21,10 +24,7 @@
         &__inner {
             width: 50%;
             margin: 0 0 0 auto;
-            padding: 30px;
-            -webkit-box-shadow: 0 0 16px rgba(0,0,0,0.5);
-            -moz-box-shadow: 0 0 16px rgba(0,0,0,0.5);
-            box-shadow: 0 0 16px rgba(0,0,0,0.5);
+            padding: 24px;
         }
     }
 }

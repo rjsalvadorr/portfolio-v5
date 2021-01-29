@@ -26,7 +26,7 @@ module.exports = {
   ],
   author: {
     name: 'RJ Salvador',
-    photo: '/wat.jpg',
+    photo: '/profile-pic.jpg',
     bio: 'Clan in the front, let ya feet stomp. Ninjas in the back, brag shit to death',
     contacts: {
       email: 'rjsalvadorr@gmail.com',

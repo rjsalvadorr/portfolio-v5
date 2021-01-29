@@ -39,8 +39,8 @@ They're all acrylic on canvas (24" x 12"), finished with semi-gloss varnish.
 1. Clean up mistakes
 1. Varnish (2 to 3 coats)
 
-![yep yep yep](/media/artblog/sharingan/kakashi-process.gif "yep yep")
+![hrm](/media/artblog/sharingan/kakashi-process.gif)
 
-![yep yep yep](/media/artblog/sharingan/itachi-process-2.gif "yep yep")
+![hrm](/media/artblog/sharingan/itachi-process-2.gif)
 
-![yep yep yep](/media/artblog/sharingan/sasuke-process.gif "yep yep")
+![hrm](/media/artblog/sharingan/sasuke-process.gif)
