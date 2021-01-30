@@ -3,7 +3,7 @@ title: sketch no. 3
 subtitle:
 date: 2019-04-03 12:00:00
 template: post
-category: software
+category: code sketch
 tags:
   - "code sketch"
   - "threejs"
@@ -11,7 +11,7 @@ thumbnail: media/code/sketch-3/thumb.jpg
 options:
   - hideDesc
 slug: "sketch-3"
-draft: false
+draft: true
 ---
 
 <style type="text/css">

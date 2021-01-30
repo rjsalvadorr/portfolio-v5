@@ -3,7 +3,7 @@ title: SnackWatcher
 subtitle: Fall 2015 to Spring 2016
 date: 2017-01-08 17:10:50
 template: post
-category: software
+category: code project
 tags:
   - "code fun"
   - "python"
@@ -11,7 +11,7 @@ thumbnail: media/code/snackwatcher/thumb.jpg
 options:
   - hideDate
 slug: "snackwatcher"
-description: "Sometime in late 2015/early 2016, I worked on a neat project while working at the Jonah Group."
+description: "Snacks + Machine Vision"
 draft: false
 ---
 

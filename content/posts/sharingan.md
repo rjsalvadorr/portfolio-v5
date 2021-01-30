@@ -9,7 +9,7 @@ tags:
   - "anime"
 thumbnail: media/artblog/sharingan/thumb.jpg
 slug: "sharingan"
-description: "I watched a Naruto marathon a few months ago, so I was destined to make some fanart eventually."
+description: "Fun fan art"
 draft: false
 ---
 

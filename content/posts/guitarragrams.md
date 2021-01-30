@@ -3,13 +3,13 @@ title: guitarragrams
 subtitle: Guitar chord diagrams
 date: 2018-09-23 18:02:06
 template: post
-category: software
+category: code project
 tags:
   - "code project"
   - "guitar"
 thumbnail: media/code/guitarragrams/snapshot.png
 slug: "guitarragrams"
-description: "Earlier this year, I was studying chord patterns and wrote them into a document. This was a PITA to update, so I made a web app out of it."
+description: "Visual reference for guitar chord voicings"
 draft: false
 ---
 

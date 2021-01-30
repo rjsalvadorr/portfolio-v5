@@ -15,12 +15,26 @@ type Props = {
   post: Node
 };
 
+const GALLERY_TAGS = [
+  'code-sketch',
+  'painting',
+  'sketchbook',
+]
+
+const isGallery = (tagClasses) => {
+  const isGalleryTag = (tag) => {
+    if (GALLERY_TAGS.includes(tag)) {
+      return true;
+    }
+  };
+  return tagClasses.some(isGalleryTag);
+}
+
 const Post = ({ post }: Props) => {
   const { html } = post;
   const { tagSlugs, slug } = post.fields;
   const { tags, title, date } = post.frontmatter;
   const tagClasses = tags.map((tag) => tag.toLowerCase().replace(' ', '-'));
-  const isGallery = tagClasses.includes('code-sketch');
 
   return (
     <div className={styles['post']}>
@@ -28,7 +42,7 @@ const Post = ({ post }: Props) => {
         <Link className={styles['post__home-button']} to="/"><FontAwesomeIcon icon={faArrowLeft} /></Link>
 
         <div className={styles['post__content']}>
-          <Content body={html} title={title} galleryView={isGallery} />
+          <Content body={html} title={title} galleryView={isGallery(tagClasses)} />
         </div>
 
         <div className={styles['post__footer']}>

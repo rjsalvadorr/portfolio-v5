@@ -8,8 +8,8 @@ tags:
   - "sketchbook"
 thumbnail: media/artblog/sketches/thumb.jpg
 slug: "sketches"
-description: "Randoms from my sketchbooks."
-draft: false
+description: "Randoms from sketchbooks"
+draft: true
 ---
 
 Randoms from my sketchbooks.
