@@ -2,6 +2,15 @@
 @import '../../assets/scss/mixins';
 
 .post {
+  position: relative;
+  z-index: 3000;
+
+  &__inner {
+    padding: 25px 20px;
+    background-color: $color-212648-light;
+    margin: 32px;
+  }
+
   &__footer {
     max-width: $layout-post-width;
     margin: 0 auto;
@@ -22,7 +31,7 @@
     line-height: $button-height;
     text-align: center;
     color: $color-base;
-    border: 1px solid $color-gray-border;
+    border: 1px solid $color-base;
     border-radius: $button-border-radius;
     font-size: $typographic-base-font-size;
     font-weight: normal;
@@ -39,24 +48,49 @@
 
 }
 
-@include breakpoint-md {
+@include breakpoint-sm {
   .post {
-    &__footer {
-      padding: 0;
-    }
-
-    &__comments {
-      padding: 0;
-    }
+    lost-column: 2/3 4 0;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: $color-212648-light;
+    -webkit-box-shadow: 0 0 16px $col-box-shadow-light;
+    -moz-box-shadow: 0 0 16px $col-box-shadow-light;
+    box-shadow: 0 0 16px $col-box-shadow-light;
 
     &__home-button {
-      position: fixed;
-      max-width: auto;
       margin: 0;
-      top: 30px;
-      left: 30px
+      position: absolute;
+      left: 1.6rem;
+      top: 4.5rem;
     }
 
+    &__inner {
+      padding: 0;
+      margin: 0;
+      background: none;
+    }
   }
-
 }
+
+// @include breakpoint-md {
+//   .post {
+//     &__footer {
+//       padding: 0;
+//     }
+
+//     &__comments {
+//       padding: 0;
+//     }
+
+//     &__home-button {
+//       position: fixed;
+//       max-width: auto;
+//       margin: 0;
+//       top: 30px;
+//       left: 30px
+//     }
+
+//   }
+
+// }

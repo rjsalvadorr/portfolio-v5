@@ -3,6 +3,9 @@ title: Rise of the Raptors
 subtitle: See the Toronto Raptors' path to a championship
 date: 2019-07-27 14:00:00
 category: software
+tags:
+  - "code project"
+  - "sports"
 target_url: /apps/rise-of-the-raptors/
 thumbnail: media/code/sketch-7/thumb.jpg
 slug: "rise-of-the-raptors"

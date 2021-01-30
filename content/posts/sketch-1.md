@@ -4,6 +4,9 @@ subtitle:
 date: 2019-03-31 12:00:00
 template: post
 category: software
+tags:
+  - "code sketch"
+  - "threejs"
 thumbnail: media/code/sketch-1/thumb.jpg
 options:
   - hideDesc

@@ -4,6 +4,8 @@ subtitle:
 date: 2017-03-29 17:09:31
 template: post
 category: art
+tags:
+  - "sketchbook"
 thumbnail: media/artblog/sketches/thumb.jpg
 slug: "sketches"
 description: "Randoms from my sketchbooks."

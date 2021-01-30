@@ -2,9 +2,11 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
+import Sidebar from '../components/Sidebar';
 import Post from '../components/Post';
 import { useSiteMetadata } from '../hooks';
 import type { MarkdownRemark } from '../types';
+import bgVid01 from '../assets/vid/bg-test-1.mp4';
 
 type Props = {
   data: {
@@ -23,7 +25,17 @@ const PostTemplate = ({ data }: Props) => {
 
   return (
     <Layout title={`${postTitle} - ${siteTitle}`} description={metaDescription} socialImage={socialImageUrl} >
-      <Post post={data.markdownRemark} />
+      {/* <Post post={data.markdownRemark} /> */}
+      <div className="main-background">
+        <video className="background-video" autoPlay playsInline loop muted>
+          <source src={bgVid01} type="video/mp4" />
+          Sorry, your browser doesn't support embedded videos.
+        </video>
+      </div>
+      <div className="main-content">
+        <Sidebar />
+        <Post post={data.markdownRemark} />
+      </div>
     </Layout>
   );
 };
