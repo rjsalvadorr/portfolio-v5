@@ -1,32 +1,45 @@
 @import '../../assets/scss/variables';
 @import '../../assets/scss/mixins';
 
+$text-bg: rgba(0, 0, 0, 0.8);
+
 .feed {
   @include padding(0, 0, 1, 0);
 
   &__item {
     @include margin-bottom(1.25);
-    @include padding(0.5, 0.5);
-    min-height: 14rem;
+    min-height: 25rem;
     background-color: rgba(0, 0, 0, 0.1);
+    position: relative;
+    color: $color-212648-lightest;
 
     &:last-child {
       @include margin-bottom(.5);
     }
 
+    &-meta {
+      opacity: 0.9;
+    }
+
+    &-header {
+      @include padding(0.4, 0.4);
+      background-color: $text-bg;
+      color: $color-212648-lightest;
+    }
+
     &-title {
-      font-size: $typographic-base-font-size * 1.6875;
-      @include line-height(1.5);
+      font-size: $typographic-base-font-size * 1.75;
+      line-height: $typographic-base-font-size * 1.75;
       @include margin-top(0);
-      @include margin-bottom(.5);
+      @include margin-bottom(0);
 
       &-link {
-        color: $color-base;
+        color: $color-212648-lightest;
 
         &:hover,
         &:focus {
-          color: $color-base;
-          border-bottom: 1px solid $color-base;
+          color: $color-212648-lightest;
+          border-bottom: 1px solid $color-212648-lightest;
         }
 
       }
@@ -34,15 +47,20 @@
     }
 
     &-description {
+      @include padding(0.4, 0.4);
       font-size: $typographic-base-font-size;
-      @include line-height(1);
-      @include margin-bottom(.75);
+      line-height: $typographic-base-font-size * 1.5;
+      margin-bottom: 0;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-color: $text-bg;
     }
 
     &-meta {
       &-time {
         font-size: $typographic-small-font-size;
-        color: $color-base;
         font-weight: 600;
         text-transform: uppercase;
       }
@@ -89,7 +107,6 @@
   .feed {
     display: grid;
     grid-gap: 1.625rem;
-    grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
 
     &__item {

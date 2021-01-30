@@ -4,7 +4,7 @@ subtitle:
 date: 2017-04-30 13:22:43
 template: post
 category: software
-thumbnail: ./thumb.png
+thumbnail: media/code/autocomposer/thumb.png
 slug: "autocomposer"
 description: "I've always wanted to make software that did something with music. That led me to play with JS libraries out there that can handle music theory, playback, and notation. Slowly, I started to think of ways to tie this all together to build an automatic music composer."
 ---

@@ -4,7 +4,7 @@ subtitle:
 date: 2017-03-29 17:09:42
 template: post
 category: art
-thumbnail: ./thumb.jpg
+thumbnail: media/artblog/arabesques/thumb.jpg
 slug: "arabesques"
 description: "I painted these after a vacation to Egypt. The art and architecture of Old Cairo were especially inspiring."
 ---

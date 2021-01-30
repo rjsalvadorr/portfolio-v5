@@ -4,7 +4,7 @@ subtitle:
 date: 2019-04-03 12:00:00
 template: post
 category: software
-thumbnail: ./thumb.jpg
+thumbnail: media/code/sketch-3/thumb.jpg
 options:
   - hideDesc
 slug: "sketch-3"

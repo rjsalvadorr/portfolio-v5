@@ -4,7 +4,7 @@ subtitle:
 date: 2019-03-24 13:35:57
 template: post
 category: art
-thumbnail: ./thumb.jpg
+thumbnail: media/artblog/sharingan/thumb.jpg
 slug: "sharingan"
 description: "I watched a Naruto marathon a few months ago, so I was destined to make some fanart eventually."
 ---

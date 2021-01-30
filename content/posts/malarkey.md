@@ -5,7 +5,7 @@ type: link
 category: music
 subtitle: Played bass here from 2016-2017
 target_url: https://malarkeyjams.bandcamp.com/
-thumbnail: ./thumb.png
+thumbnail: media/code/sketch-7/thumb.png
 options:
   - hideDate
 slug: "malarkey"
