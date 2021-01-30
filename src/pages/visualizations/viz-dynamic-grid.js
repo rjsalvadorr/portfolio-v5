@@ -13,9 +13,9 @@ class DynamicGridFeature extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <div className={vizStyles.featureWrapper}>
           <DynamicGrid />
-          <div className={vizStyles.featureText}>
+          {/* <div className={vizStyles.featureText}>
             Dynamic Grid
-          </div>
+          </div> */}
         </div>
       </Layout>
     );

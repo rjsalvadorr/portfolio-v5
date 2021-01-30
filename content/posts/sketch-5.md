@@ -1,9 +1,9 @@
 ---
-title: sketch no. 5
+title: Dynamic Grid
 subtitle:
 date: 2019-06-05 12:00:00
 template: post
-category: code sketch
+category: code sketches
 tags:
   - "code sketch"
   - "threejs"

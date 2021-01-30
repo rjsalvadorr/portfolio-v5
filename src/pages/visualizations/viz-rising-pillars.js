@@ -13,9 +13,9 @@ class RisingPillarsFeature extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <div className={vizStyles.featureWrapper}>
           <RisingPillars />
-          <div className={vizStyles.featureText}>
+          {/* <div className={vizStyles.featureText}>
             Rising Pillars
-          </div>
+          </div> */}
         </div>
       </Layout>
     );

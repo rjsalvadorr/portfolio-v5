@@ -3,7 +3,7 @@ title: sketch no. 3
 subtitle:
 date: 2019-04-03 12:00:00
 template: post
-category: code sketch
+category: code sketches
 tags:
   - "code sketch"
   - "threejs"

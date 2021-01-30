@@ -39,7 +39,7 @@ const TagTemplate = ({ data, pageContext }: Props) => {
         </video>
       </div>
       <div className="main-content">
-        <Sidebar isIndex />
+        <Sidebar />
         <Page title={tag}>
           <Feed edges={edges} />
           <Pagination

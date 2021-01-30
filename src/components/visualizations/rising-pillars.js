@@ -43,8 +43,8 @@ class RisingPillars extends React.Component {
     const UPDATES_PER_SECOND = 24;
     const GRID_WIDTH = 360;
     const GRID_LENGTH = 360;
-    const GRID_UNIT_WIDTH = 20;
-    const GRID_UNIT_LENGTH = 20;
+    const GRID_UNIT_WIDTH = 13;
+    const GRID_UNIT_LENGTH = 13;
     const PILLAR_BASE_HEIGHT = 25;
     const WAVE_CENTER_POINT = {
       x: -900,

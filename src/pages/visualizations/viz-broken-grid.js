@@ -13,9 +13,9 @@ class BrokenGridFeature extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <div className={vizStyles.featureWrapper}>
           <BrokenGrid />
-          <div className={vizStyles.featureText}>
+          {/* <div className={vizStyles.featureText}>
             Broken Grid
-          </div>
+          </div> */}
         </div>
       </Layout>
     );

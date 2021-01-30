@@ -1,9 +1,9 @@
 ---
-title: sketch no. 4
+title: Three City
 subtitle:
 date: 2019-05-15 12:00:00
 template: post
-category: code sketch
+category: code sketches
 tags:
   - "code sketch"
   - "threejs"

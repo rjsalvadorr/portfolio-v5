@@ -3,7 +3,7 @@ title: guitarragrams
 subtitle: Guitar chord diagrams
 date: 2018-09-23 18:02:06
 template: post
-category: code project
+category: code projects
 tags:
   - "code project"
   - "guitar"

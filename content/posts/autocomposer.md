@@ -3,7 +3,7 @@ title: AutoComposer
 subtitle:
 date: 2017-04-30 13:22:43
 template: post
-category: code project
+category: code projects
 tags:
   - "code project"
   - "music composition"

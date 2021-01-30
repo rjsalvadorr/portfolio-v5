@@ -2,12 +2,13 @@
 title: Rise of the Raptors
 subtitle: See the Toronto Raptors' path to a championship
 date: 2019-07-27 14:00:00
-category: code project
+category: code projects
+template: post
 tags:
   - "code project"
   - "sports"
 target_url: /apps/rise-of-the-raptors/
-thumbnail: media/code/sketch-7/thumb.jpg
+thumbnail: media/code/rise-of-the-raptors/thumb.jpg
 slug: "rise-of-the-raptors"
 draft: false
 ---
@@ -15,7 +16,7 @@ draft: false
 2019 was a very special year for Toronto Raptors fans. After going to the championship parade, I decided to play with infographics showing the Toronto Raptors' path to a championship.
 
 <!-- more -->
-![visual demo](./demo.gif)
+![visual demo](/media/code/rise-of-the-raptors/demo.gif)
 
 ## Tools/resources used
 

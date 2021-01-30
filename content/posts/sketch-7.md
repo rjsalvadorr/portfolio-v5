@@ -1,9 +1,9 @@
 ---
-title: sketch no. 7
+title: Rising Pillars
 subtitle:
 date: 2020-01-29 12:00:00
 template: post
-category: code sketch
+category: code sketches
 tags:
   - "code sketch"
   - "threejs"

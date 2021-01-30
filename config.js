@@ -5,24 +5,24 @@ module.exports = {
   pathPrefix: '/',
   title: 'reluctant adjustments',
   subtitle: 'blog by RJ Salvador',
-  copyright: '© All rights reserved',
+  copyright: '© all rights reserved',
   disqusShortname: '',
   postsPerPage: 6,
   googleAnalyticsId: 'UA-73379983-2',
   useKatex: false,
   menu: [
     {
-      label: 'Articles',
+      label: 'All Posts',
       path: '/'
     },
     {
-      label: 'About',
-      path: '/pages/about'
+      label: 'Code Projects',
+      path: '/category/code-projects/'
     },
     {
-      label: 'Contact',
-      path: '/pages/contacts'
-    }
+      label: 'Art',
+      path: '/category/art/'
+    },
   ],
   author: {
     name: 'RJ Salvador',

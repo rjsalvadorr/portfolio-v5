@@ -1,9 +1,9 @@
 ---
-title: sketch no. 6
+title: Broken Grid
 subtitle:
 date: 2019-06-08 12:00:00
 template: post
-category: code sketch
+category: code sketches
 tags:
   - "code sketch"
   - "threejs"
