@@ -9,4 +9,5 @@ thumbnail: media/code/sketch-7/thumb.jpg
 options:
   - hideDate
 slug: "classical-jams"
+draft: false
 ---

@@ -11,6 +11,7 @@ thumbnail: media/code/sketch-3/thumb.jpg
 options:
   - hideDesc
 slug: "sketch-3"
+draft: false
 ---
 
 <style type="text/css">

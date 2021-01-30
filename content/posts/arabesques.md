@@ -9,6 +9,7 @@ tags:
 thumbnail: media/artblog/arabesques/thumb.jpg
 slug: "arabesques"
 description: "I painted these after a vacation to Egypt. The art and architecture of Old Cairo were especially inspiring."
+draft: false
 ---
 
 I painted these after a vacation to Egypt. The art and architecture of Old Cairo were especially inspiring.

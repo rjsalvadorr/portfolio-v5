@@ -46,6 +46,12 @@
 
   }
 
+  &--gallery {
+    &__inner {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
 }
 
 @include breakpoint-sm {

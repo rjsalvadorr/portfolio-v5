@@ -9,6 +9,7 @@ tags:
 target_url: /apps/rise-of-the-raptors/
 thumbnail: media/code/sketch-7/thumb.jpg
 slug: "rise-of-the-raptors"
+draft: false
 ---
 
 2019 was a very special year for Toronto Raptors fans. After going to the championship parade, I decided to play with infographics showing the Toronto Raptors' path to a championship.

@@ -10,7 +10,9 @@ tags:
 thumbnail: media/artblog/sharingan/thumb.jpg
 slug: "sharingan"
 description: "I watched a Naruto marathon a few months ago, so I was destined to make some fanart eventually."
+draft: false
 ---
+
 I watched a Naruto marathon a few months ago, so I was destined to make some fanart eventually.
 
 Behold:

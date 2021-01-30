@@ -9,4 +9,5 @@ thumbnail: media/code/sketch-7/thumb.png
 options:
   - hideDate
 slug: "malarkey"
+draft: false
 ---

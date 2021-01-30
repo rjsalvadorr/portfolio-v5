@@ -12,6 +12,7 @@ options:
   - hideDate
 slug: "broquest"
 description: "Two brothers tried to make a Zelda-esque platformer, and they caught a glimpse of development hell."
+draft: false
 ---
 
 Two brothers tried to make a Zelda-esque platformer, and they caught a glimpse of development hell.

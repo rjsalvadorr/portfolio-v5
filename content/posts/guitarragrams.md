@@ -10,6 +10,7 @@ tags:
 thumbnail: media/code/guitarragrams/snapshot.png
 slug: "guitarragrams"
 description: "Earlier this year, I was studying chord patterns and wrote them into a document. This was a PITA to update, so I made a web app out of it."
+draft: false
 ---
 
 Earlier this year, I was studying chord patterns and wrote them into a document.
