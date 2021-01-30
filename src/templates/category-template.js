@@ -31,18 +31,6 @@ const CategoryTemplate = ({ data, pageContext }: Props) => {
   const pageTitle = currentPage > 0 ? `${category} - Page ${currentPage} - ${siteTitle}` : `${category} - ${siteTitle}`;
 
   return (
-    // <Layout title={pageTitle} description={siteSubtitle}>
-    //   <Sidebar />
-    //   <Page title={category}>
-    //     <Feed edges={edges} />
-    //     <Pagination
-    //       prevPagePath={prevPagePath}
-    //       nextPagePath={nextPagePath}
-    //       hasPrevPage={hasPrevPage}
-    //       hasNextPage={hasNextPage}
-    //     />
-    //   </Page>
-    // </Layout>
     <Layout title={pageTitle} description={siteSubtitle}>
       <div className="main-background">
         <video className="background-video" autoPlay playsInline loop muted>
@@ -53,12 +41,6 @@ const CategoryTemplate = ({ data, pageContext }: Props) => {
       <div className="main-content">
         <Sidebar />
         <Page title={category}>
-          <Pagination
-            prevPagePath={prevPagePath}
-            nextPagePath={nextPagePath}
-            hasPrevPage={hasPrevPage}
-            hasNextPage={hasNextPage}
-          />
           <Feed edges={edges} />
           <Pagination
             prevPagePath={prevPagePath}

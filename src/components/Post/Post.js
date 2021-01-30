@@ -1,6 +1,8 @@
 // @flow strict
 import React from 'react';
 import { Link } from 'gatsby';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import Author from './Author';
 import Comments from './Comments';
 import Content from './Content';
@@ -21,7 +23,7 @@ const Post = ({ post }: Props) => {
   return (
     <div className={styles['post']}>
       <div className={styles['post__inner']}>
-        <Link className={styles['post__home-button']} to="/">All Articles</Link>
+        <Link className={styles['post__home-button']} to="/"><FontAwesomeIcon icon={faArrowLeft} /></Link>
 
         <div className={styles['post__content']}>
           <Content body={html} title={title} />

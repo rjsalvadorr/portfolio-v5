@@ -31,18 +31,6 @@ const TagTemplate = ({ data, pageContext }: Props) => {
   const pageTitle = currentPage > 0 ? `All Posts tagged as "${tag}" - Page ${currentPage} - ${siteTitle}` : `All Posts tagged as "${tag}" - ${siteTitle}`;
 
   return (
-    // <Layout title={pageTitle} description={siteSubtitle}>
-    //   <Sidebar />
-    //   <Page title={tag}>
-    //     <Feed edges={edges} />
-    //     <Pagination
-    //       prevPagePath={prevPagePath}
-    //       nextPagePath={nextPagePath}
-    //       hasPrevPage={hasPrevPage}
-    //       hasNextPage={hasNextPage}
-    //     />
-    //   </Page>
-    // </Layout>
     <Layout title={pageTitle} description={siteSubtitle}>
       <div className="main-background">
         <video className="background-video" autoPlay playsInline loop muted>
@@ -53,12 +41,6 @@ const TagTemplate = ({ data, pageContext }: Props) => {
       <div className="main-content">
         <Sidebar isIndex />
         <Page title={tag}>
-          <Pagination
-            prevPagePath={prevPagePath}
-            nextPagePath={nextPagePath}
-            hasPrevPage={hasPrevPage}
-            hasNextPage={hasNextPage}
-          />
           <Feed edges={edges} />
           <Pagination
             prevPagePath={prevPagePath}

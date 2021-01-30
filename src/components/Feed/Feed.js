@@ -15,7 +15,6 @@ const Feed = ({ edges }: Props) => (
         backgroundImage: `url(/${edge.node.frontmatter.thumbnail})`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
-        // boxShadow: 'inset 0px 71px 53px rgba(0, 0, 0, 0.33)'
       }
 
       const desc = edge.node.frontmatter.description ? <p className={styles['feed__item-description']}>{edge.node.frontmatter.description}</p> : null
