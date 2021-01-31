@@ -26,8 +26,8 @@ module.exports = {
   ],
   author: {
     name: 'RJ Salvador',
-    photo: '/profile-pic.jpg',
-    bio: 'Clan in the front, let ya feet stomp. Ninjas in the back, brag shit to death',
+    photo: '/wat.jpg',
+    bio: 'A javascribe based in Toronto, RJ spends his free time playing with music, code, and addictive games',
     contacts: {
       email: 'rjsalvadorr@gmail.com',
       facebook: '',

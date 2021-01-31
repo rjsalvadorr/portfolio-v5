@@ -6,7 +6,7 @@ import Sidebar from '../components/Sidebar';
 import Post from '../components/Post';
 import { useSiteMetadata } from '../hooks';
 import type { MarkdownRemark } from '../types';
-import bgVid01 from '../assets/vid/bg-test-1.mp4';
+import bgVid04 from '../assets/vid/bg4.mp4';
 
 type Props = {
   data: {
@@ -28,7 +28,7 @@ const PostTemplate = ({ data }: Props) => {
       {/* <Post post={data.markdownRemark} /> */}
       <div className="main-background">
         <video className="background-video" autoPlay playsInline loop muted>
-          <source src={bgVid01} type="video/mp4" />
+          <source src={bgVid04} type="video/mp4" />
           Sorry, your browser doesn't support embedded videos.
         </video>
       </div>

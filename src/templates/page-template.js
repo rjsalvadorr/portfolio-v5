@@ -6,7 +6,7 @@ import Sidebar from '../components/Sidebar';
 import Page from '../components/Page';
 import { useSiteMetadata } from '../hooks';
 import type { MarkdownRemark } from '../types';
-import bgVid01 from '../assets/vid/bg-test-1.mp4';
+import bgVid02 from '../assets/vid/bg2.mp4';
 
 type Props = {
   data: {
@@ -25,16 +25,10 @@ const PageTemplate = ({ data }: Props) => {
   const socialImageUrl = '';
 
   return (
-    // <Layout title={`${pageTitle} - ${siteTitle}`} description={metaDescription} socialImage={socialImageUrl} >
-    //   <Sidebar />
-    //   <Page title={pageTitle}>
-    //     <div dangerouslySetInnerHTML={{ __html: pageBody }} />
-    //   </Page>
-    // </Layout>
     <Layout title={`${pageTitle} - ${siteTitle}`} description={metaDescription} socialImage={socialImageUrl} >
       <div className="main-background">
         <video className="background-video" autoPlay playsInline loop muted>
-          <source src={bgVid01} type="video/mp4" />
+          <source src={bgVid02} type="video/mp4" />
           Sorry, your browser doesn't support embedded videos.
         </video>
       </div>

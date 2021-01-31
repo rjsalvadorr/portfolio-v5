@@ -4,6 +4,7 @@ import { withPrefix, Link } from 'gatsby';
 import styles from './Author.module.scss';
 
 type Props = {
+  siteTitle: string,
   author: {
     name: string,
     bio: string,
@@ -12,7 +13,7 @@ type Props = {
   isIndex: ?boolean
 };
 
-const Author = ({ author, isIndex }: Props) => (
+const Author = ({ siteTitle, author, isIndex }: Props) => (
   <div className={styles['author']}>
     <Link to="/">
       <img
@@ -26,11 +27,11 @@ const Author = ({ author, isIndex }: Props) => (
 
     { isIndex === true ? (
       <h1 className={styles['author__title']}>
-        <Link className={styles['author__title-link']} to="/">{author.name}</Link>
+        {siteTitle}<br />(blogged by <Link className={styles['author__title-link']} to="/">{author.name}</Link>)
       </h1>
     ) : (
       <h2 className={styles['author__title']}>
-        <Link className={styles['author__title-link']} to="/">{author.name}</Link>
+        {siteTitle}<br />(blogged by <Link className={styles['author__title-link']} to="/">{author.name}</Link>)
       </h2>
     )}
     <p className={styles['author__subtitle']}>{author.bio}</p>

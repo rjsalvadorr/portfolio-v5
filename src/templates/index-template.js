@@ -8,7 +8,7 @@ import Page from '../components/Page';
 import Pagination from '../components/Pagination';
 import { useSiteMetadata } from '../hooks';
 import type { PageContext, AllMarkdownRemark } from '../types';
-import bgVid01 from '../assets/vid/bg-test-1.mp4';
+import bgVid01 from '../assets/vid/bg1.mp4';
 
 type Props = {
   data: AllMarkdownRemark,

@@ -7,9 +7,11 @@ type Props = {
   children: React.Node
 };
 
-const Page = ({ title = 'reluctant adjustments', isIndex, children }: Props) => {
+const Page = ({ title = 'home', isIndex, children }: Props) => {
   const pageRef = useRef();
-  const isIndexClass = isIndex ? `${styles['page__title--index']}` : null;
+  const pageTitle = isIndex ? 'home' : title;
+  // const isIndexClass = isIndex ? `${styles['page__title--index']}` : null;
+  const isIndexClass = null;
 
   useEffect(() => {
     pageRef.current.scrollIntoView();
@@ -18,7 +20,7 @@ const Page = ({ title = 'reluctant adjustments', isIndex, children }: Props) => 
   return (
     <div ref={pageRef} className={styles['page']}>
       <div className={styles['page__inner']}>
-        { title && <h1 className={`${styles['page__title']} ${isIndexClass}`}>{title}</h1>}
+        { pageTitle && <h1 className={`${styles['page__title']} ${isIndexClass}`}>{title}</h1>}
         <div className={styles['page__body']}>
           {children}
         </div>

@@ -8,7 +8,7 @@ import Page from '../components/Page';
 import Pagination from '../components/Pagination';
 import { useSiteMetadata } from '../hooks';
 import type { AllMarkdownRemark, PageContext } from '../types';
-import bgVid01 from '../assets/vid/bg-test-1.mp4';
+import bgVid03 from '../assets/vid/bg3.mp4';
 
 type Props = {
   data: AllMarkdownRemark,
@@ -34,7 +34,7 @@ const TagTemplate = ({ data, pageContext }: Props) => {
     <Layout title={pageTitle} description={siteSubtitle}>
       <div className="main-background">
         <video className="background-video" autoPlay playsInline loop muted>
-          <source src={bgVid01} type="video/mp4" />
+          <source src={bgVid03} type="video/mp4" />
           Sorry, your browser doesn't support embedded videos.
         </video>
       </div>
