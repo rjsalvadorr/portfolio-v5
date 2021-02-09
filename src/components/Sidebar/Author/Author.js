@@ -26,14 +26,11 @@ const Author = ({ siteTitle, author, isIndex }: Props) => (
     </Link>
 
     { isIndex === true ? (
-      <h1 className={styles['author__title']}>
-        {siteTitle}<br />(blogged by <Link className={styles['author__title-link']} to="/">{author.name}</Link>)
-      </h1>
+      <h1 className={styles['author__title']}>{siteTitle}</h1>
     ) : (
-      <h2 className={styles['author__title']}>
-        {siteTitle}<br />(blogged by <Link className={styles['author__title-link']} to="/">{author.name}</Link>)
-      </h2>
+      <h2 className={styles['author__title']}>{siteTitle}</h2>
     )}
+
     <p className={styles['author__subtitle']}>{author.bio}</p>
   </div>
 );

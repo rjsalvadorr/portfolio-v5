@@ -27,7 +27,7 @@ module.exports = {
   author: {
     name: 'RJ Salvador',
     photo: '/wat.jpg',
-    bio: 'A javascribe based in Toronto, RJ spends his free time playing with music, code, and addictive games',
+    bio: 'Blogged by RJ Salvador, a javascribe based in Toronto',
     contacts: {
       email: 'rjsalvadorr@gmail.com',
       facebook: '',

@@ -189,18 +189,18 @@ figcaption {
   }
 }
 
-.main-content {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  overflow-y: scroll;
-  z-index: 1000;
-}
+// .main-content {
+//   position: fixed;
+//   top: 0;
+//   right: 0;
+//   // bottom: 0;
+//   left: 0;
+//   overflow-y: scroll;
+//   z-index: 1000;
+// }
 
-@include breakpoint-sm {
-  .main-content {
-    overflow-y: hidden;
-  }
-}
+// @include breakpoint-sm {
+//   .main-content {
+//     overflow-y: hidden;
+//   }
+// }
