@@ -8,6 +8,7 @@ $text-bg: rgba(0, 0, 0, 0.8);
 
   &__item {
     @include margin-bottom(1.25);
+    @include card-box-shadow();
     min-height: 25rem;
     background-color: rgba(0, 0, 0, 0.1);
     position: relative;
@@ -72,13 +73,13 @@ $text-bg: rgba(0, 0, 0, 0.8);
       &-category {
         &-link {
           font-size: $typographic-small-font-size;
-          color: $color-secondary;
+          color: $color-accent;
           font-weight: 600;
           text-transform: uppercase;
 
           &:hover,
           &:focus {
-            color: $color-primary;
+            color: $color-accent-2;
           }
 
         }
@@ -89,12 +90,12 @@ $text-bg: rgba(0, 0, 0, 0.8);
 
     &-readmore {
       font-size: $typographic-base-font-size;
-      color: $color-primary;
+      color: $color-accent-2;
 
       &:hover,
       &:focus {
-        color: $color-primary;
-        border-bottom: 1px solid $color-primary;
+        color: $color-accent-2;
+        border-bottom: 1px solid $color-accent-2;
       }
 
     }

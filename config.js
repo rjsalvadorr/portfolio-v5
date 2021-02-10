@@ -26,7 +26,7 @@ module.exports = {
   ],
   author: {
     name: 'RJ Salvador',
-    photo: '/wat.jpg',
+    photo: '/logo-white.png',
     bio: 'Blogged by RJ Salvador, a javascribe based in Toronto',
     contacts: {
       email: 'rjsalvadorr@gmail.com',

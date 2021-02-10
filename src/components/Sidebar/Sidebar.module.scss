@@ -7,11 +7,9 @@
         position: relative;
         padding: 20px;
         margin: 32px;
-        color: $color-212648-lightest;
-        background-color: $color-212648-darkest;
-        -webkit-box-shadow: 0 0 16px $col-box-shadow;
-        -moz-box-shadow: 0 0 16px $col-box-shadow;
-        box-shadow: 0 0 16px $col-box-shadow;
+        color: $color-sidebar;
+        background-color: $color-sidebar-bg;
+        @include basic-box-shadow();
     }
     position: relative;
     z-index: 2000;

@@ -7,7 +7,7 @@
 
   &__inner {
     padding: 25px 20px;
-    background-color: $color-212648-light;
+    background-color: $color-page-bg;
     margin: 32px;
   }
 
@@ -36,10 +36,8 @@
     lost-column: 2/3 4 0;
     min-height: 100vh;
     // overflow-y: auto;
-    background-color: $color-212648-light;
-    -webkit-box-shadow: 0 0 16px $col-box-shadow-light;
-    -moz-box-shadow: 0 0 16px $col-box-shadow-light;
-    box-shadow: 0 0 16px $col-box-shadow-light;
+    background-color: $color-page-bg;
+    @include basic-box-shadow();
 
     &__inner {
       padding: 30px 20px;

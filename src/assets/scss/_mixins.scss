@@ -4,3 +4,15 @@
 @import "mixins/margin";
 @import "mixins/padding";
 @import "mixins/line-height";
+
+@mixin basic-box-shadow() {
+  -webkit-box-shadow: 0 0 16px $col-box-shadow;
+  -moz-box-shadow: 0 0 16px $col-box-shadow;
+  box-shadow: 0 0 16px $col-box-shadow;
+}
+
+@mixin card-box-shadow() {
+  -webkit-box-shadow: 2px 2px 4px $col-box-shadow-light;
+  -moz-box-shadow: 2px 2px 4px $col-box-shadow-light;
+  box-shadow: 2px 2px 4px $col-box-shadow-light;
+}
