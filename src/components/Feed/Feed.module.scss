@@ -107,7 +107,7 @@ $text-bg: rgba(0, 0, 0, 0.8);
 @include breakpoint-md {
   .feed {
     display: grid;
-    grid-gap: 1.625rem;
+    grid-gap: $space-unit;
     grid-template-columns: 1fr 1fr;
 
     &__item {

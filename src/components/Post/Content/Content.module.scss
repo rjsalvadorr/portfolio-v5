@@ -15,6 +15,7 @@
     text-align: center;
     @include line-height(1.65);
     @include margin-top(1);
+    // margin-top: 0;
     @include margin-bottom(0)
   }
 
@@ -57,7 +58,7 @@
   }
 
   &--gallery {
-    padding: 1rem;
+    padding: 0 1rem;
     max-width: none;
   }
   
@@ -73,7 +74,7 @@
     &__title {
       font-size: $typographic-base-font-size * 3;
       @include line-height(2.25);
-      @include margin-top(2.25);
+      @include margin-top(2);
       @include margin-bottom(1.5)
     }
 
@@ -91,7 +92,7 @@
     }
 
     &--gallery {
-      padding: 1rem;
+      padding: 0 1rem;
     }
   }
 
@@ -100,7 +101,7 @@
 @include breakpoint-lg {
   .content {
     &--gallery {
-      padding: 2rem;
+      padding: 0 2rem;
     }
   }
 

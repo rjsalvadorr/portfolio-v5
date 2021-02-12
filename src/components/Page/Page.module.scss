@@ -6,7 +6,7 @@
   z-index: 3000;
 
   &__inner {
-    padding: 25px 20px;
+    padding: $space-unit;
     background-color: $color-page-bg;
     margin: 32px;
   }
@@ -40,7 +40,7 @@
     @include basic-box-shadow();
 
     &__inner {
-      padding: 30px 20px;
+      padding: $space-unit;
       margin: 0;
       background: none;
     }

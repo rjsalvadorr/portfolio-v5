@@ -5,7 +5,7 @@ module.exports = {
   pathPrefix: '/',
   title: 'reluctant adjustments',
   subtitle: 'blog by RJ Salvador',
-  copyright: '© all rights reserved',
+  copyright: '© rjsalvadorr 2021',
   disqusShortname: '',
   postsPerPage: 6,
   googleAnalyticsId: 'UA-73379983-2',

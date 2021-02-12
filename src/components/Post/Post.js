@@ -32,14 +32,17 @@ const isGallery = (tagClasses) => {
 
 const Post = ({ post }: Props) => {
   const { html } = post;
-  const { tagSlugs, slug } = post.fields;
+  // const { tagSlugs, slug } = post.fields;
+  const { tagSlugs } = post.fields;
   const { tags, title, date } = post.frontmatter;
   const tagClasses = tags.map((tag) => tag.toLowerCase().replace(' ', '-'));
 
   return (
     <div className={styles['post']}>
       <div className={styles['post__inner']}>
-        <Link className={styles['post__home-button']} to="/"><FontAwesomeIcon icon={faArrowLeft} /></Link>
+        <div className={styles['post__button-wrapper']}>
+          <Link className={styles['post__home-button']} to="/"><FontAwesomeIcon icon={faArrowLeft} /></Link>
+        </div>
 
         <div className={styles['post__content']}>
           <Content body={html} title={title} galleryView={isGallery(tagClasses)} />
@@ -48,12 +51,12 @@ const Post = ({ post }: Props) => {
         <div className={styles['post__footer']}>
           <Meta date={date} />
           {tags && tagSlugs && <Tags tags={tags} tagSlugs={tagSlugs} />}
-          <Author />
+          {/* <Author /> */}
         </div>
 
-        <div className={styles['post__comments']}>
+        {/* <div className={styles['post__comments']}>
           <Comments postSlug={slug} postTitle={post.frontmatter.title} />
-        </div>
+        </div> */}
       </div>
     </div>
   );

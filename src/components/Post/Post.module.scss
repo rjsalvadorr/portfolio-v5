@@ -23,21 +23,24 @@
     padding: 0 15px;
   }
 
-  &__home-button {
-    display: block;
-    max-width: 90px;
-    height: $button-height;
-    padding: 0 24px;
-    line-height: $button-height;
-    text-align: center;
-    color: $color-base;
-    border: 1px solid $color-base;
-    border-radius: $button-border-radius;
-    font-size: $typographic-base-font-size;
-    font-weight: normal;
+  &__button-wrapper {
+    max-width: $layout-post-width;
     margin-left: auto;
     margin-right: auto;
     @include margin-top(1);
+    text-align: left;
+    position: relative;
+  }
+
+  &__home-button {
+    display: block;
+    position: absolute;
+    top: 0.25rem;
+    left: 0.5rem;
+    font-size: $typographic-base-font-size * 2;
+    line-height: $typographic-base-font-size * 2;
+    text-align: center;
+    color: darken($color-accent, 15%);
 
     &:hover,
     &:focus {
@@ -63,10 +66,7 @@
     @include basic-box-shadow();
 
     &__home-button {
-      margin: 0;
-      position: absolute;
-      left: 1.6rem;
-      top: 4.5rem;
+      left: 1rem;
     }
 
     &__inner {
@@ -75,6 +75,19 @@
       background: none;
     }
   }
+}
+
+
+@include breakpoint-md {
+  .post {
+    &__home-button {
+      font-size: $typographic-base-font-size * 3;
+      line-height: $typographic-base-font-size * 3;
+      left: 0;
+    }
+
+  }
+
 }
 
 // @include breakpoint-md {

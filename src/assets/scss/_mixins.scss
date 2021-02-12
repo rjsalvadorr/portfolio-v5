@@ -16,3 +16,7 @@
   -moz-box-shadow: 2px 2px 4px $col-box-shadow-light;
   box-shadow: 2px 2px 4px $col-box-shadow-light;
 }
+
+@mixin text-shadow() {
+  text-shadow: 5px 5px $col-box-shadow;
+}

@@ -4,7 +4,7 @@ import classNames from 'classnames/bind';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'gatsby';
-import { PAGINATION } from '../../constants';
+// import { PAGINATION } from '../../constants';
 import styles from './Pagination.module.scss';
 
 type Props = {
