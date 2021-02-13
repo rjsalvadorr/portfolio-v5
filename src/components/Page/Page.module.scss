@@ -14,7 +14,7 @@
   }
 
   &__title {
-    text-transform: capitalize;
+    // text-transform: capitalize;
     font-size: $typographic-base-font-size * 2.5;
     line-height: $typographic-base-font-size * 2.5;
     font-weight: 600;
@@ -45,12 +45,8 @@
   }
 }
 
-// @include breakpoint-md {
+// @include breakpoint-lg {
 //   .page {
-//       flex: 0 0 70%;
-
-//       &__inner {
-//         margin-left: 0;
-//       }
+//     flex-basis: 80%;
 //   }
 // }

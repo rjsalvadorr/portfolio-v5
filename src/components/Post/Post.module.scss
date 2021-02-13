@@ -35,7 +35,7 @@
     display: block;
     position: absolute;
     top: 0.25rem;
-    left: 0;
+    left: 1rem;
     font-size: $typographic-base-font-size * 2;
     line-height: $typographic-base-font-size * 2;
     text-align: center;
@@ -67,7 +67,9 @@
 @include breakpoint-sm {
   .post {
     min-height: 100vh;
-    flex: 0 0 70%;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 75%;
 
     &__inner {
       margin-left: 0;
@@ -75,12 +77,12 @@
   }
 }
 
-
 @include breakpoint-md {
   .post {
       &__home-button {
         font-size: $typographic-base-font-size * 3;
         line-height: $typographic-base-font-size * 3;
+        // left: 0;
       }
   }
 
@@ -92,5 +94,25 @@
 @include breakpoint-lg {
   .post--gallery__home-button {
     left: 2rem;
+  }
+
+  .post__button-wrapper {
+    margin-top: $space-unit;
+  }
+}
+
+@media only screen and (min-width: 1240px) {
+  .post__home-button {
+    left: 0;
+  }
+}
+
+@include breakpoint-xl {
+  .post__home-button {
+    left: 0;
+  }
+
+  .post__button-wrapper {
+    max-width: $layout-post-width-lg;
   }
 }

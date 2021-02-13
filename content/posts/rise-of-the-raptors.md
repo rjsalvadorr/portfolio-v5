@@ -10,6 +10,7 @@ tags:
 target_url: /apps/rise-of-the-raptors/
 thumbnail: media/code/rise-of-the-raptors/thumb.jpg
 slug: "rise-of-the-raptors"
+description: "Infographics on the Toronto Raptors' path to a championship"
 draft: false
 ---
 

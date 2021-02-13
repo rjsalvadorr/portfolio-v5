@@ -27,10 +27,11 @@ const IndexTemplate = ({ data, pageContext }: Props) => {
   } = pageContext;
 
   const { edges } = data.allMarkdownRemark;
-  const pageTitle = currentPage > 0 ? `Posts - Page ${currentPage} - ${siteTitle}` : siteTitle;
+  const pageTitle = currentPage > 0 ? `All Posts, page ${currentPage}` : null;
+  console.log(pageTitle);
 
   return (
-    <Layout title={pageTitle} description={siteSubtitle}>
+    <Layout title={siteTitle} description={siteSubtitle}>
       <div className="main-background">
         <video className="background-video" autoPlay playsInline loop muted>
           <source src={bgVid01} type="video/mp4" />
@@ -39,7 +40,7 @@ const IndexTemplate = ({ data, pageContext }: Props) => {
       </div>
       <div className="main-content">
         <Sidebar isIndex />
-        <Page isIndex>
+        <Page title={pageTitle} isIndex>
           <Feed edges={edges} />
           <Pagination
             prevPagePath={prevPagePath}

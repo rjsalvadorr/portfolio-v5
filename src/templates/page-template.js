@@ -18,14 +18,12 @@ const PageTemplate = ({ data }: Props) => {
   const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
   const { html: pageBody } = data.markdownRemark;
   const { frontmatter } = data.markdownRemark;
-  // const { title: pageTitle, description: pageDescription = '', socialImage } = frontmatter;
   const { title: pageTitle, description: pageDescription = '' } = frontmatter;
   const metaDescription = pageDescription || siteSubtitle;
-  // const socialImageUrl = socialImage?.publicURL;
   const socialImageUrl = '';
 
   return (
-    <Layout title={`${pageTitle} - ${siteTitle}`} description={metaDescription} socialImage={socialImageUrl} >
+    <Layout title={`${pageTitle} | ${siteTitle}`} description={metaDescription} socialImage={socialImageUrl} >
       <div className="main-background">
         <video className="background-video" autoPlay playsInline loop muted>
           <source src={bgVid02} type="video/mp4" />

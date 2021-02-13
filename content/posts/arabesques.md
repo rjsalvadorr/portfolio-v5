@@ -8,7 +8,6 @@ tags:
   - "painting"
 thumbnail: media/artblog/arabesques/thumb.jpg
 slug: "arabesques"
-description: "Geometric paintings"
 draft: false
 ---
 

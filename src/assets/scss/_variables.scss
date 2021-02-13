@@ -54,17 +54,20 @@ $button-height: 35px;
 $button-border-radius: 20px;
 
 // Layout
-$layout-post-single-width: 945px;
-$layout-post-width: $layout-post-single-width - 305px;
+$space-unit: 2.5rem;
+$icon-font-size: 3rem;
+
+$layout-post-single-width: 960px;
+$layout-post-width: $layout-post-single-width - 160px;
+$layout-post-width-lg: $layout-post-single-width;
 
 $layout-width: 1070px;
 $layout-breakpoint-sm: 685px;
 $layout-breakpoint-md: 960px;
 $layout-breakpoint-lg: 1100px;
-
+$layout-breakpoint-xl: 1400px;
 
 $col-box-shadow: rgba(0,0,0,8);
 $col-box-shadow-light: rgba(0,0,0,0.5);
 
-$space-unit: 2.5rem;
-$icon-font-size: 3rem;
+

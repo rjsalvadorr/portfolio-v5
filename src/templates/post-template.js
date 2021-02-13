@@ -22,7 +22,7 @@ const PostTemplate = ({ data }: Props) => {
   const socialImageUrl = '';
 
   return (
-    <Layout title={`${postTitle} - ${siteTitle}`} description={metaDescription} socialImage={socialImageUrl} >
+    <Layout title={`${postTitle} | ${siteTitle}`} description={metaDescription} socialImage={socialImageUrl} >
       <div className="main-background">
         <video className="background-video" autoPlay playsInline loop muted>
           <source src={bgVid04} type="video/mp4" />

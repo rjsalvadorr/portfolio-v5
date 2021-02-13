@@ -15,6 +15,12 @@ type Props = {
   pageContext: PageContext
 };
 
+const titleCase = (str) => (
+  str.toLowerCase().split(' ').map(function(word) {
+    return (word.charAt(0).toUpperCase() + word.slice(1));
+  }).join(' ')
+);
+
 const CategoryTemplate = ({ data, pageContext }: Props) => {
   const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
 
@@ -28,10 +34,10 @@ const CategoryTemplate = ({ data, pageContext }: Props) => {
   } = pageContext;
 
   const { edges } = data.allMarkdownRemark;
-  const pageTitle = currentPage > 0 ? `${category} - Page ${currentPage} - ${siteTitle}` : `${category} - ${siteTitle}`;
+  const pageTitle = currentPage > 0 ? `${titleCase(category)}, page ${currentPage}` : titleCase(category);
 
   return (
-    <Layout title={pageTitle} description={siteSubtitle}>
+    <Layout title={siteTitle} description={siteSubtitle}>
       <div className="main-background">
         <video className="background-video" autoPlay playsInline loop muted>
           <source src={bgVid03} type="video/mp4" />
@@ -40,7 +46,7 @@ const CategoryTemplate = ({ data, pageContext }: Props) => {
       </div>
       <div className="main-content">
         <Sidebar />
-        <Page title={category}>
+        <Page title={pageTitle}>
           <Feed edges={edges} />
           <Pagination
             prevPagePath={prevPagePath}

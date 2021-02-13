@@ -16,7 +16,7 @@ type Props = {
 };
 
 const TagTemplate = ({ data, pageContext }: Props) => {
-  const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
+  const { subtitle: siteSubtitle } = useSiteMetadata();
 
   const {
     tag,
@@ -28,7 +28,7 @@ const TagTemplate = ({ data, pageContext }: Props) => {
   } = pageContext;
 
   const { edges } = data.allMarkdownRemark;
-  const pageTitle = currentPage > 0 ? `All Posts tagged as "${tag}" - Page ${currentPage} - ${siteTitle}` : `All Posts tagged as "${tag}" - ${siteTitle}`;
+  const pageTitle = currentPage > 0 ? `Tag: ${tag}, page ${currentPage}` : `Tag: ${tag}`;
 
   return (
     <Layout title={pageTitle} description={siteSubtitle}>
@@ -40,7 +40,7 @@ const TagTemplate = ({ data, pageContext }: Props) => {
       </div>
       <div className="main-content">
         <Sidebar />
-        <Page title={tag} isTag>
+        <Page title={pageTitle}>
           <Feed edges={edges} />
           <Pagination
             prevPagePath={prevPagePath}

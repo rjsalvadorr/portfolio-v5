@@ -12,7 +12,7 @@ const TagsListTemplate = () => {
   const tags = useTagsList();
 
   return (
-    <Layout title={`Tags - ${title}`} description={subtitle}>
+    <Layout title={`${title} | tags`} description={subtitle}>
       <Sidebar />
       <Page title="Tags">
         <ul>

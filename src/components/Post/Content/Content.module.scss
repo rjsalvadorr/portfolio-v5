@@ -69,7 +69,6 @@
 
 @include breakpoint-md {
   .content {
-    padding: 0;
 
     &__title {
       font-size: $typographic-base-font-size * 3;
@@ -99,9 +98,39 @@
 
 @include breakpoint-lg {
   .content {
+
     &--gallery {
       padding: 0 2rem;
     }
-  }
 
+    &__title {
+      margin-top: $space-unit;
+    }
+  }
+}
+
+
+
+@include breakpoint-xl {
+  .content {
+    padding: 0;
+    max-width: $layout-post-single-width;
+
+    &__title {
+      max-width: $layout-post-width-lg;
+    }
+
+    &__body {
+      & figure {
+        & blockquote {
+          & p {
+            max-width: $layout-post-width-lg;
+          }
+        }
+      }
+      & * {
+        max-width: $layout-post-width-lg;
+      }
+    }
+  }
 }

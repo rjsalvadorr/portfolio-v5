@@ -3,17 +3,11 @@ import styles from './Page.module.scss';
 
 type Props = {
   title?: string,
-  isIndex?: boolean,
-  isTag?: boolean,
   children: React.Node
 };
 
-const Page = ({ title = 'home', isIndex, isTag, children }: Props) => {
+const Page = ({ title, children }: Props) => {
   const pageRef = useRef();
-  let pageTitle = isIndex ? 'home' : title;
-  if (isTag) {
-    pageTitle = `tag: ${pageTitle}`;
-  }
 
   useEffect(() => {
     pageRef.current.scrollIntoView();
@@ -22,7 +16,7 @@ const Page = ({ title = 'home', isIndex, isTag, children }: Props) => {
   return (
     <div ref={pageRef} className={styles['page']}>
       <div className={styles['page__inner']}>
-        { pageTitle && <h1 className={styles['page__title']}>{pageTitle}</h1>}
+        { title && <h1 className={styles['page__title']}>{title}</h1>}
         <div className={styles['page__body']}>
           {children}
         </div>
