@@ -6,9 +6,9 @@
   z-index: 3000;
 
   &__inner {
-    padding: 25px 20px;
     background-color: $color-page-bg;
-    margin: 32px;
+    padding: $space-unit 0;
+    margin: $space-unit;
   }
 
   &__footer {
@@ -27,7 +27,7 @@
     max-width: $layout-post-width;
     margin-left: auto;
     margin-right: auto;
-    @include margin-top(1);
+    // @include margin-top(1);
     text-align: left;
     position: relative;
   }
@@ -36,7 +36,8 @@
     display: block;
     position: absolute;
     top: 0.25rem;
-    left: 0.5rem;
+    left: 0;
+    // left: 1rem;
     font-size: $typographic-base-font-size * 2;
     line-height: $typographic-base-font-size * 2;
     text-align: center;
@@ -48,66 +49,58 @@
     }
 
   }
+}
 
-  &--gallery {
-    &__inner {
-      padding-left: 0;
-      padding-right: 0;
-    }
+.post--gallery {
+  &__inner {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &__button-wrapper {
+    max-width: $layout-post-width * 2;
+  }
+
+  &__home-button {
+    left: 1rem;
   }
 }
 
 @include breakpoint-sm {
   .post {
-    lost-column: 2/3 4 0;
     min-height: 100vh;
-    // overflow-y: auto;
-    background-color: $color-page-bg;
-    @include basic-box-shadow();
-
-    &__home-button {
-      left: 1rem;
-    }
-
-    &__inner {
-      padding: 0;
-      margin: 0;
-      background: none;
-    }
   }
 }
 
 
 @include breakpoint-md {
   .post {
-    &__home-button {
-      font-size: $typographic-base-font-size * 3;
-      line-height: $typographic-base-font-size * 3;
-      left: 0;
-    }
+      flex: 0 0 70%;
 
+      &__inner {
+        margin-left: 0;
+      }
+
+      &__home-button {
+        font-size: $typographic-base-font-size * 3;
+        line-height: $typographic-base-font-size * 3;
+        // left: 1rem;
+      }
   }
 
+  .post--gallery__home-button {
+    left: 1rem;
+  }
 }
 
-// @include breakpoint-md {
-//   .post {
-//     &__footer {
-//       padding: 0;
-//     }
+@include breakpoint-lg {
+  // .post {
+  //     &__home-button {
+  //       left: 2rem;
+  //     }
+  // }
 
-//     &__comments {
-//       padding: 0;
-//     }
-
-//     &__home-button {
-//       position: fixed;
-//       max-width: auto;
-//       margin: 0;
-//       top: 30px;
-//       left: 30px
-//     }
-
-//   }
-
-// }
+  .post--gallery__home-button {
+    left: 2rem;
+  }
+}

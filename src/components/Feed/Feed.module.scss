@@ -108,7 +108,7 @@ $text-bg: rgba(0, 0, 0, 0.8);
   .feed {
     display: grid;
     grid-gap: $space-unit;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
 
     &__item {
       margin-bottom: 0;

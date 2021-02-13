@@ -36,16 +36,21 @@ const Post = ({ post }: Props) => {
   const { tagSlugs } = post.fields;
   const { tags, title, date } = post.frontmatter;
   const tagClasses = tags.map((tag) => tag.toLowerCase().replace(' ', '-'));
+  const izGallery = isGallery(tagClasses);
+
+  const innerClass = izGallery ? `${styles['post__inner']} ${styles['post--gallery__inner']}` : styles['post__inner'];
+  const btnWrapClass = izGallery ? `${styles['post__button-wrapper']} ${styles['post--gallery__button-wrapper']}` : styles['post__button-wrapper'];
+  const btnClass = izGallery ? `${styles['post__home-button']} ${styles['post--gallery__home-button']}` : styles['post__home-button'];
 
   return (
     <div className={styles['post']}>
-      <div className={styles['post__inner']}>
-        <div className={styles['post__button-wrapper']}>
-          <Link className={styles['post__home-button']} to="/"><FontAwesomeIcon icon={faArrowLeft} /></Link>
+      <div className={innerClass}>
+        <div className={btnWrapClass}>
+          <Link className={btnClass} to="/"><FontAwesomeIcon icon={faArrowLeft} /></Link>
         </div>
 
         <div className={styles['post__content']}>
-          <Content body={html} title={title} galleryView={isGallery(tagClasses)} />
+          <Content body={html} title={title} galleryView={izGallery} />
         </div>
 
         <div className={styles['post__footer']}>

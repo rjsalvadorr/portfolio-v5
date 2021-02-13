@@ -9,7 +9,8 @@
 }
 
 body {
-  margin: 0 0 0 calc(100vw - 100%);
+  // margin: 0 0 0 calc(100vw - 100%);
+  margin: 0;
   font-family: $typographic-font-family;
   color: $typographic-base-font-color;
   line-height: $typographic-base-line-height;
@@ -199,8 +200,8 @@ figcaption {
 //   z-index: 1000;
 // }
 
-// @include breakpoint-sm {
-//   .main-content {
-//     overflow-y: hidden;
-//   }
-// }
+@include breakpoint-md {
+  .main-content {
+    display: flex;
+  }
+}
