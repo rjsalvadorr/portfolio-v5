@@ -9,7 +9,6 @@
 }
 
 body {
-  // margin: 0 0 0 calc(100vw - 100%);
   margin: 0;
   font-family: $typographic-font-family;
   color: $typographic-base-font-color;
@@ -170,6 +169,9 @@ figcaption {
     float: left;
   }
 
+  .main-content {
+    display: flex;
+  }
 }
 
 .main-background {
@@ -187,21 +189,5 @@ figcaption {
     min-height: 100%;
     height: auto;
     width: auto;
-  }
-}
-
-// .main-content {
-//   position: fixed;
-//   top: 0;
-//   right: 0;
-//   // bottom: 0;
-//   left: 0;
-//   overflow-y: scroll;
-//   z-index: 1000;
-// }
-
-@include breakpoint-md {
-  .main-content {
-    display: flex;
   }
 }

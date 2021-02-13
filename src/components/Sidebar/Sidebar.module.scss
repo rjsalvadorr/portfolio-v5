@@ -2,7 +2,7 @@
 @import '../../assets/scss/mixins';
 
 .sidebar {
-    width: 100%;
+    // width: 100%;
     text-align: center;
     &__inner {
         position: relative;
@@ -16,8 +16,10 @@
     z-index: 2000;
 }
 
-@include breakpoint-md {
+@include breakpoint-sm {
     .sidebar {
-        flex: 0 0 30%;
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: 25%;
     }
 }

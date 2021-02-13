@@ -13,9 +13,6 @@ class ThreeCityFeature extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <div className={vizStyles.featureWrapper}>
           <ThreeCity />
-          {/* <div className={vizStyles.featureText}>
-            Three City
-          </div> */}
         </div>
       </Layout>
     );

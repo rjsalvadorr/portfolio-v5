@@ -9,7 +9,6 @@ tags:
   - "anime"
 thumbnail: media/artblog/sharingan/thumb.jpg
 slug: "sharingan"
-description: "Fun fan art"
 draft: false
 ---
 

@@ -8,6 +8,7 @@
   &__inner {
     padding: $space-unit;
     background-color: $color-page-bg;
+    min-height: calc(100vh - #{$space-unit * 4});
     margin: $space-unit;
     @include basic-box-shadow();
   }
@@ -34,15 +35,22 @@
 @include breakpoint-sm {
   .page {
     min-height: 100vh;
-  }
-}
-
-@include breakpoint-md {
-  .page {
-      flex: 0 0 70%;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 75%;
 
       &__inner {
         margin-left: 0;
       }
   }
 }
+
+// @include breakpoint-md {
+//   .page {
+//       flex: 0 0 70%;
+
+//       &__inner {
+//         margin-left: 0;
+//       }
+//   }
+// }

@@ -32,7 +32,6 @@ const isGallery = (tagClasses) => {
 
 const Post = ({ post }: Props) => {
   const { html } = post;
-  // const { tagSlugs, slug } = post.fields;
   const { tagSlugs } = post.fields;
   const { tags, title, date } = post.frontmatter;
   const tagClasses = tags.map((tag) => tag.toLowerCase().replace(' ', '-'));
@@ -56,12 +55,7 @@ const Post = ({ post }: Props) => {
         <div className={styles['post__footer']}>
           <Meta date={date} />
           {tags && tagSlugs && <Tags tags={tags} tagSlugs={tagSlugs} />}
-          {/* <Author /> */}
         </div>
-
-        {/* <div className={styles['post__comments']}>
-          <Comments postSlug={slug} postTitle={post.frontmatter.title} />
-        </div> */}
       </div>
     </div>
   );

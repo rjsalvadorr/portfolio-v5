@@ -17,15 +17,12 @@ type Props = {
 const PostTemplate = ({ data }: Props) => {
   const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
   const { frontmatter } = data.markdownRemark;
-  // const { title: postTitle, description: postDescription = '', socialImage } = frontmatter;
   const { title: postTitle, description: postDescription = '' } = frontmatter;
   const metaDescription = postDescription || siteSubtitle;
-  // const socialImageUrl = socialImage?.publicURL;
   const socialImageUrl = '';
 
   return (
     <Layout title={`${postTitle} - ${siteTitle}`} description={metaDescription} socialImage={socialImageUrl} >
-      {/* <Post post={data.markdownRemark} /> */}
       <div className="main-background">
         <video className="background-video" autoPlay playsInline loop muted>
           <source src={bgVid04} type="video/mp4" />

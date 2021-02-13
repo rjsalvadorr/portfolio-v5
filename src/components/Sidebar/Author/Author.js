@@ -9,11 +9,10 @@ type Props = {
     name: string,
     bio: string,
     photo: string
-  },
-  isIndex: ?boolean
+  }
 };
 
-const Author = ({ siteTitle, author, isIndex }: Props) => (
+const Author = ({ siteTitle, author }: Props) => (
   <div className={styles['author']}>
     <Link to="/">
       <img
@@ -24,13 +23,7 @@ const Author = ({ siteTitle, author, isIndex }: Props) => (
         alt={author.name}
       />
     </Link>
-
-    { isIndex === true ? (
-      <h1 className={styles['author__title']}>{siteTitle}</h1>
-    ) : (
-      <h2 className={styles['author__title']}>{siteTitle}</h2>
-    )}
-
+    <h1 className={styles['author__title']}>{siteTitle}</h1>
     <p className={styles['author__subtitle']}>{author.bio}</p>
   </div>
 );

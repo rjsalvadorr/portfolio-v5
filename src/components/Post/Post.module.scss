@@ -27,7 +27,6 @@
     max-width: $layout-post-width;
     margin-left: auto;
     margin-right: auto;
-    // @include margin-top(1);
     text-align: left;
     position: relative;
   }
@@ -37,7 +36,6 @@
     position: absolute;
     top: 0.25rem;
     left: 0;
-    // left: 1rem;
     font-size: $typographic-base-font-size * 2;
     line-height: $typographic-base-font-size * 2;
     text-align: center;
@@ -69,22 +67,20 @@
 @include breakpoint-sm {
   .post {
     min-height: 100vh;
+    flex: 0 0 70%;
+
+    &__inner {
+      margin-left: 0;
+    }
   }
 }
 
 
 @include breakpoint-md {
   .post {
-      flex: 0 0 70%;
-
-      &__inner {
-        margin-left: 0;
-      }
-
       &__home-button {
         font-size: $typographic-base-font-size * 3;
         line-height: $typographic-base-font-size * 3;
-        // left: 1rem;
       }
   }
 
@@ -94,12 +90,6 @@
 }
 
 @include breakpoint-lg {
-  // .post {
-  //     &__home-button {
-  //       left: 2rem;
-  //     }
-  // }
-
   .post--gallery__home-button {
     left: 2rem;
   }
