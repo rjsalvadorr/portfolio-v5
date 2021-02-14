@@ -98,18 +98,15 @@
 
 @include breakpoint-lg {
   .content {
+    &__title {
+      margin-top: $space-unit / 2;
+    }
 
     &--gallery {
       padding: 0 2rem;
     }
-
-    &__title {
-      margin-top: $space-unit;
-    }
   }
 }
-
-
 
 @include breakpoint-xl {
   .content {

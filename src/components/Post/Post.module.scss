@@ -82,7 +82,6 @@
       &__home-button {
         font-size: $typographic-base-font-size * 3;
         line-height: $typographic-base-font-size * 3;
-        // left: 0;
       }
   }
 
@@ -97,13 +96,17 @@
   }
 
   .post__button-wrapper {
-    margin-top: $space-unit;
+    margin-top: $space-unit / 2;
   }
 }
 
 @media only screen and (min-width: 1240px) {
   .post__home-button {
     left: 0;
+  }
+
+  .post--gallery__home-button {
+    left: 2rem;
   }
 }
 
@@ -114,5 +117,6 @@
 
   .post__button-wrapper {
     max-width: $layout-post-width-lg;
+    margin-top: $space-unit;
   }
 }
