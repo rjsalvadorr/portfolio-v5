@@ -54,7 +54,7 @@ The easiest way to create a smooth melody that sounds good when played with chor
 
 ## Results
 
-Take a look at [rj-salvador.com/apps/autocomposer/](http://www.rj-salvador.com/apps/autocomposer/)  
+Take a look at [reluctant-adjustments.com/apps/autocomposer/](http://www.reluctant-adjustments.com/apps/autocomposer/)  
 For more info, check out the [project wiki](https://github.com/rjsalvadorr/autocomposer-js/wiki) and [repository](https://github.com/rjsalvadorr/autocomposer-js).
 
 ![yep yep yep](/media/code/autocomposer/snapshot.png "yep yep")

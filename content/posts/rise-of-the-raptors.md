@@ -27,5 +27,5 @@ draft: false
 
 ## Results
 
-Take a look at [rj-salvador.com/apps/rise-of-the-raptors/](http://www.rj-salvador.com/apps/rise-of-the-raptors/)  
+Take a look at [reluctant-adjustments.com/apps/rise-of-the-raptors/](http://www.reluctant-adjustments.com/apps/rise-of-the-raptors/)  
 For more info, check out the project repository at [github.com/rjsalvadorr/rise-of-the-raps](https://github.com/rjsalvadorr/rise-of-the-raps)
