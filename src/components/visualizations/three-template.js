@@ -121,9 +121,6 @@ class ThreeTemplate extends React.Component {
 
     const cameraTarget = new THREE.Vector3 (0, 0, 0);
 
-    console.log(this.camera);
-    console.log(box1);
-
 
 
     //////////

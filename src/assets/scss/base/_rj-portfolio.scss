@@ -169,9 +169,6 @@ figcaption {
     float: left;
   }
 
-  .main-content {
-    display: flex;
-  }
 }
 
 .main-background {
@@ -190,9 +187,4 @@ figcaption {
     height: auto;
     width: auto;
   }
-}
-
-.main-content {
-  position: relative;
-  z-index: 1;
 }

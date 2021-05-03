@@ -2,13 +2,11 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
-import Sidebar from '../components/Sidebar';
 import Feed from '../components/Feed';
 import Page from '../components/Page';
 import Pagination from '../components/Pagination';
 import { useSiteMetadata } from '../hooks';
 import type { PageContext, AllMarkdownRemark } from '../types';
-import bgVid01 from '../assets/vid/bg1.mp4';
 import ThreeTemplate from '../components/visualizations/three-template';
 
 type Props = {
@@ -29,7 +27,6 @@ const IndexTemplate = ({ data, pageContext }: Props) => {
 
   const { edges } = data.allMarkdownRemark;
   const pageTitle = currentPage > 0 ? `All Posts, page ${currentPage}` : null;
-  console.log(pageTitle);
 
   return (
     <Layout title={siteTitle} description={siteSubtitle}>
@@ -37,9 +34,8 @@ const IndexTemplate = ({ data, pageContext }: Props) => {
         <ThreeTemplate debugMode={true} />
       </div>
       <div className="main-content">
-      <Sidebar isIndex />
         <Page title={pageTitle} isIndex>
-          <Feed edges={edges} />
+          <Feed edges={edges} includeSidebar={true}/>
           <Pagination
             prevPagePath={prevPagePath}
             nextPagePath={nextPagePath}

@@ -3,13 +3,16 @@ import React from 'react';
 import { Link } from 'gatsby';
 import type { Edges } from '../../types';
 import styles from './Feed.module.scss';
+import Sidebar from '../Sidebar';
 
 type Props = {
   edges: Edges
 };
 
-const Feed = ({ edges }: Props) => (
+const Feed = ({ edges, includeSidebar }: Props) => (
   <div className={styles['feed']}>
+    {includeSidebar && <Sidebar />}
+
     {edges.map((edge) => {
       const bgImageStyling = {
         backgroundImage: `url(/${edge.node.frontmatter.thumbnail})`,

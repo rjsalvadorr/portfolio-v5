@@ -2,14 +2,13 @@
 @import '../../assets/scss/mixins';
 
 .sidebar {
-    // width: 100%;
     text-align: center;
     &__inner {
         position: relative;
         padding: $space-unit;
         margin: $space-unit;
         color: $color-sidebar;
-        // background-color: $color-sidebar-bg;
+        background-color: $color-sidebar-bg;
         @include basic-box-shadow();
     }
     position: relative;
@@ -23,11 +22,3 @@
         flex-basis: 25%;
     }
 }
-
-// @include breakpoint-lg {
-//     .sidebar {
-//         flex-grow: 0;
-//         flex-shrink: 1;
-//         flex-basis: 20%;
-//     }
-// }

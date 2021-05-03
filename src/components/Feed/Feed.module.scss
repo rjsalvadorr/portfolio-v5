@@ -102,20 +102,18 @@ $text-bg: rgba(0, 0, 0, 0.8);
 
   }
 
-}
-
-@include breakpoint-md {
-  .feed {
-    display: grid;
-    grid-gap: $space-unit;
-    grid-template-columns: 1fr 1fr;
-
-    &__item {
-      margin-bottom: 0;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
+  & > div {
+    margin-top: 16.6vh;
+    margin-bottom: 16.6vh;
   }
+
+  & > div:nth-of-type(2n+1) {
+    margin-right: 33.3%;
+  }
+
+  & > div:nth-of-type(2n) {
+    margin-left: 33.3%;
+  }
+
+
 }

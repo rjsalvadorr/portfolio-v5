@@ -4,17 +4,16 @@
 .page {
   position: relative;
   z-index: 3000;
+  max-width: 1280px;
+  margin: 0 auto;
 
   &__inner {
     padding: $space-unit;
-    // background-color: $color-page-bg;
     min-height: calc(100vh - #{$space-unit * 4});
-    margin: $space-unit;
     @include basic-box-shadow();
   }
 
   &__title {
-    // text-transform: capitalize;
     font-size: $typographic-base-font-size * 2.5;
     line-height: $typographic-base-font-size * 2.5;
     font-weight: 600;
@@ -31,22 +30,3 @@
     @include line-height(1);
   }
 }
-
-@include breakpoint-sm {
-  .page {
-    min-height: 100vh;
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: 75%;
-
-      &__inner {
-        margin-left: 0;
-      }
-  }
-}
-
-// @include breakpoint-lg {
-//   .page {
-//     flex-basis: 80%;
-//   }
-// }
