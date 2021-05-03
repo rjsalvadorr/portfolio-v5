@@ -1,0 +1,14 @@
+.debug-model {
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  flex: 0 0 25%;
+  padding: 1rem;
+  box-sizing: border-box;
+
+  p {
+    padding: 0;
+    margin: 0 0 0.4rem 0;
+    font-family: monospace;
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+  }
+}

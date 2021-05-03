@@ -9,6 +9,7 @@ import Pagination from '../components/Pagination';
 import { useSiteMetadata } from '../hooks';
 import type { PageContext, AllMarkdownRemark } from '../types';
 import bgVid01 from '../assets/vid/bg1.mp4';
+import ThreeTemplate from '../components/visualizations/three-template';
 
 type Props = {
   data: AllMarkdownRemark,
@@ -33,13 +34,10 @@ const IndexTemplate = ({ data, pageContext }: Props) => {
   return (
     <Layout title={siteTitle} description={siteSubtitle}>
       <div className="main-background">
-        <video className="background-video" autoPlay playsInline loop muted>
-          <source src={bgVid01} type="video/mp4" />
-          Sorry, your browser doesn't support embedded videos.
-        </video>
+        <ThreeTemplate debugMode={true} />
       </div>
       <div className="main-content">
-        <Sidebar isIndex />
+      <Sidebar isIndex />
         <Page title={pageTitle} isIndex>
           <Feed edges={edges} />
           <Pagination

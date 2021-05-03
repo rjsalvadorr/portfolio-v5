@@ -7,7 +7,7 @@
 
   &__inner {
     padding: $space-unit;
-    background-color: $color-page-bg;
+    // background-color: $color-page-bg;
     min-height: calc(100vh - #{$space-unit * 4});
     margin: $space-unit;
     @include basic-box-shadow();

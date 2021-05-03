@@ -1,0 +1,10 @@
+.debug-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #0088ff;
+  z-index: 1000;
+}
+
+.debug-list {
+  display: flex;
+  flex-wrap: wrap;
+}

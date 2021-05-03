@@ -9,7 +9,7 @@
         padding: $space-unit;
         margin: $space-unit;
         color: $color-sidebar;
-        background-color: $color-sidebar-bg;
+        // background-color: $color-sidebar-bg;
         @include basic-box-shadow();
     }
     position: relative;

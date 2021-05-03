@@ -191,3 +191,8 @@ figcaption {
     width: auto;
   }
 }
+
+.main-content {
+  position: relative;
+  z-index: 1;
+}
