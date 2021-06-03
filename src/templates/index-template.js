@@ -2,13 +2,8 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
-import Sidebar from '../components/Sidebar';
-import Feed from '../components/Feed';
-import Page from '../components/Page';
-import Pagination from '../components/Pagination';
 import { useSiteMetadata } from '../hooks';
 import type { PageContext, AllMarkdownRemark } from '../types';
-import bgVid01 from '../assets/vid/bg1.mp4';
 
 type Props = {
   data: AllMarkdownRemark,
@@ -17,39 +12,152 @@ type Props = {
 
 const IndexTemplate = ({ data, pageContext }: Props) => {
   const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
-
-  const {
-    currentPage,
-    hasNextPage,
-    hasPrevPage,
-    prevPagePath,
-    nextPagePath
-  } = pageContext;
-
-  const { edges } = data.allMarkdownRemark;
-  const pageTitle = currentPage > 0 ? `All Posts, page ${currentPage}` : null;
-  console.log(pageTitle);
+  console.debug(data, pageContext);
 
   return (
     <Layout title={siteTitle} description={siteSubtitle}>
-      <div className="main-background">
-        <video className="background-video" autoPlay playsInline loop muted>
-          <source src={bgVid01} type="video/mp4" />
-          Sorry, your browser doesn't support embedded videos.
-        </video>
-      </div>
-      <div className="main-content">
-        <Sidebar isIndex />
-        <Page title={pageTitle} isIndex>
-          <Feed edges={edges} />
-          <Pagination
-            prevPagePath={prevPagePath}
-            nextPagePath={nextPagePath}
-            hasPrevPage={hasPrevPage}
-            hasNextPage={hasNextPage}
-          />
-        </Page>
-      </div>
+      <section class="main-container">
+        <nav class="nav-menu">
+          <div class="nav-item">
+            <img src="https://picsum.photos/96" class="nav-item__img" />
+            <span class="nav-item__name">obedient chimpanzees</span>
+          </div>
+          <div class="nav-item">
+            <img src="https://picsum.photos/96" class="nav-item__img" />
+            <span class="nav-item__name">shrewd plum</span>
+          </div>
+          <div class="nav-item">
+            <img src="https://picsum.photos/96" class="nav-item__img" />
+            <span class="nav-item__name">resourceful lobster</span>
+          </div>
+          <div class="nav-item">
+            <img src="https://picsum.photos/96" class="nav-item__img" />
+            <span class="nav-item__name">fantastic bear</span>
+          </div>
+          <div class="nav-item">
+            <img src="https://picsum.photos/96" class="nav-item__img" />
+            <span class="nav-item__name">humorous eagle</span>
+          </div>
+          <div class="nav-item">
+            <img src="https://picsum.photos/96" class="nav-item__img" />
+            <span class="nav-item__name">decisive prune</span>
+          </div>
+          <div class="nav-item">
+            <img src="https://picsum.photos/96" class="nav-item__img" />
+            <span class="nav-item__name">receptive fish</span>
+          </div>
+          <div class="nav-item">
+            <img src="https://picsum.photos/96" class="nav-item__img" />
+            <span class="nav-item__name">funny apricots</span>
+          </div>
+          <div class="nav-item">
+            <img src="https://picsum.photos/96" class="nav-item__img" />
+            <span class="nav-item__name">obedient chimpanzees</span>
+          </div>
+          <div class="nav-item">
+            <img src="https://picsum.photos/96" class="nav-item__img" />
+            <span class="nav-item__name">shrewd plum</span>
+          </div>
+          <div class="nav-item">
+            <img src="https://picsum.photos/96" class="nav-item__img" />
+            <span class="nav-item__name">resourceful lobster</span>
+          </div>
+          <div class="nav-item">
+            <img src="https://picsum.photos/96" class="nav-item__img" />
+            <span class="nav-item__name">fantastic bear</span>
+          </div>
+          <div class="nav-item">
+            <img src="https://picsum.photos/96" class="nav-item__img" />
+            <span class="nav-item__name">humorous eagle</span>
+          </div>
+          <div class="nav-item">
+            <img src="https://picsum.photos/96" class="nav-item__img" />
+            <span class="nav-item__name">decisive prune</span>
+          </div>
+          <div class="nav-item">
+            <img src="https://picsum.photos/96" class="nav-item__img" />
+            <span class="nav-item__name">receptive fish</span>
+          </div>
+          <div class="nav-item">
+            <img src="https://picsum.photos/96" class="nav-item__img" />
+            <span class="nav-item__name">funny apricots</span>
+          </div>
+          <div class="nav-item">
+            <img src="https://picsum.photos/96" class="nav-item__img" />
+            <span class="nav-item__name">obedient chimpanzees</span>
+          </div>
+          <div class="nav-item">
+            <img src="https://picsum.photos/96" class="nav-item__img" />
+            <span class="nav-item__name">shrewd plum</span>
+          </div>
+          <div class="nav-item">
+            <img src="https://picsum.photos/96" class="nav-item__img" />
+            <span class="nav-item__name">resourceful lobster</span>
+          </div>
+          <div class="nav-item">
+            <img src="https://picsum.photos/96" class="nav-item__img" />
+            <span class="nav-item__name">fantastic bear</span>
+          </div>
+          <div class="nav-item">
+            <img src="https://picsum.photos/96" class="nav-item__img" />
+            <span class="nav-item__name">humorous eagle</span>
+          </div>
+          <div class="nav-item">
+            <img src="https://picsum.photos/96" class="nav-item__img" />
+            <span class="nav-item__name">decisive prune</span>
+          </div>
+          <div class="nav-item">
+            <img src="https://picsum.photos/96" class="nav-item__img" />
+            <span class="nav-item__name">receptive fish</span>
+          </div>
+          <div class="nav-item">
+            <img src="https://picsum.photos/96" class="nav-item__img" />
+            <span class="nav-item__name">funny apricots</span>
+          </div>
+          <div class="nav-item">
+            <img src="https://picsum.photos/96" class="nav-item__img" />
+            <span class="nav-item__name">obedient chimpanzees</span>
+          </div>
+          <div class="nav-item">
+            <img src="https://picsum.photos/96" class="nav-item__img" />
+            <span class="nav-item__name">shrewd plum</span>
+          </div>
+          <div class="nav-item">
+            <img src="https://picsum.photos/96" class="nav-item__img" />
+            <span class="nav-item__name">resourceful lobster</span>
+          </div>
+          <div class="nav-item">
+            <img src="https://picsum.photos/96" class="nav-item__img" />
+            <span class="nav-item__name">fantastic bear</span>
+          </div>
+          <div class="nav-item">
+            <img src="https://picsum.photos/96" class="nav-item__img" />
+            <span class="nav-item__name">humorous eagle</span>
+          </div>
+          <div class="nav-item">
+            <img src="https://picsum.photos/96" class="nav-item__img" />
+            <span class="nav-item__name">decisive prune</span>
+          </div>
+          <div class="nav-item">
+            <img src="https://picsum.photos/96" class="nav-item__img" />
+            <span class="nav-item__name">receptive fish</span>
+          </div>
+          <div class="nav-item">
+            <img src="https://picsum.photos/96" class="nav-item__img" />
+            <span class="nav-item__name">funny apricots</span>
+          </div>
+          <div class="nav-item">
+            <img src="https://picsum.photos/96" class="nav-item__img" />
+            <span class="nav-item__name">receptive fish</span>
+          </div>
+        </nav>
+        <main class="main-bontent">
+          <header class="page-header">
+            header
+          </header>
+          main
+        </main>
+      </section>
     </Layout>
   );
 };

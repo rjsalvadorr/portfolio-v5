@@ -191,3 +191,102 @@ figcaption {
     width: auto;
   }
 }
+
+
+
+/**********************************************************
+* PORTFOLIO JUNE 2021
+**********************************************************/
+
+:root {
+  --scrollbar-track: orange;
+  --scrollbar-thumb: black;
+  --scrollbar-width: 9px;
+  --nav-item-width: 64px;
+  --nav-item-width-lg: 96px;
+  --page-header-width: 36px;
+}
+
+// body {
+//   margin: 0;
+//   padding: 0;
+// }
+
+.page-header {
+  display: fixed;
+  background-color: #f00;
+  height: var(--page-header-width);
+}
+
+.main-container {
+  display: flex;
+}
+
+.main-bontent {
+  flex: 1 1 80%;
+  background-color: #00f;
+}
+
+.nav-menu {
+/*   flex: 0 0 20%; */
+  background-color: #0f0;
+  display: grid;
+  grid-template-columns: var(--nav-item-width);
+  grid-template-rows: repeat(auto-fit, var(--nav-item-width));
+  max-height: 100vh;
+  overflow-y: scroll;
+}
+
+.nav-item {
+  position: relative;
+  width: var(--nav-item-width);
+  height: var(--nav-item-width);
+}
+
+.nav-item__name {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: #ffffff;
+}
+
+
+
+
+@media (min-width: 501px) {
+  .nav-menu {
+    grid-template-columns: var(--nav-item-width-lg) var(--nav-item-width-lg);
+    grid-template-rows: repeat(auto-fit, var(--nav-item-width-lg));
+  }
+  
+  .nav-item {
+    width: var(--nav-item-width-lg);
+    height: var(--nav-item-width-lg);
+  }
+}
+
+
+
+/**********************************************************
+*  SCROLLBAR STYLING
+**********************************************************/
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: var(--scrollbar-width);
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb);
+  border: 1px solid var(--scrollbar-track);
+}
