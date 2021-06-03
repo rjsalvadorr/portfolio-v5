@@ -12,147 +12,36 @@ type Props = {
 
 const IndexTemplate = ({ data, pageContext }: Props) => {
   const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
-  console.debug(data, pageContext);
+  const { edges } = data.allMarkdownRemark;
+  console.debug(data, pageContext, edges.map((edge) => edge.node));
 
   return (
     <Layout title={siteTitle} description={siteSubtitle}>
-      <section class="main-container">
-        <nav class="nav-menu">
-          <div class="nav-item">
-            <img src="https://picsum.photos/96" class="nav-item__img" />
-            <span class="nav-item__name">obedient chimpanzees</span>
+      <section className="main-container">
+        <nav className="nav-menu">
+          <div className="nav-item">
+            <img src="https://picsum.photos/96" className="nav-item__img" />
+            <span className="nav-item__name">Home</span>
           </div>
-          <div class="nav-item">
-            <img src="https://picsum.photos/96" class="nav-item__img" />
-            <span class="nav-item__name">shrewd plum</span>
+          <div className="nav-item">
+            <img src="https://picsum.photos/96" className="nav-item__img" />
+            <span className="nav-item__name">CV</span>
           </div>
-          <div class="nav-item">
-            <img src="https://picsum.photos/96" class="nav-item__img" />
-            <span class="nav-item__name">resourceful lobster</span>
+          <div className="nav-item">
+            <img src="https://picsum.photos/96" className="nav-item__img" />
+            <span className="nav-item__name">Links</span>
           </div>
-          <div class="nav-item">
-            <img src="https://picsum.photos/96" class="nav-item__img" />
-            <span class="nav-item__name">fantastic bear</span>
-          </div>
-          <div class="nav-item">
-            <img src="https://picsum.photos/96" class="nav-item__img" />
-            <span class="nav-item__name">humorous eagle</span>
-          </div>
-          <div class="nav-item">
-            <img src="https://picsum.photos/96" class="nav-item__img" />
-            <span class="nav-item__name">decisive prune</span>
-          </div>
-          <div class="nav-item">
-            <img src="https://picsum.photos/96" class="nav-item__img" />
-            <span class="nav-item__name">receptive fish</span>
-          </div>
-          <div class="nav-item">
-            <img src="https://picsum.photos/96" class="nav-item__img" />
-            <span class="nav-item__name">funny apricots</span>
-          </div>
-          <div class="nav-item">
-            <img src="https://picsum.photos/96" class="nav-item__img" />
-            <span class="nav-item__name">obedient chimpanzees</span>
-          </div>
-          <div class="nav-item">
-            <img src="https://picsum.photos/96" class="nav-item__img" />
-            <span class="nav-item__name">shrewd plum</span>
-          </div>
-          <div class="nav-item">
-            <img src="https://picsum.photos/96" class="nav-item__img" />
-            <span class="nav-item__name">resourceful lobster</span>
-          </div>
-          <div class="nav-item">
-            <img src="https://picsum.photos/96" class="nav-item__img" />
-            <span class="nav-item__name">fantastic bear</span>
-          </div>
-          <div class="nav-item">
-            <img src="https://picsum.photos/96" class="nav-item__img" />
-            <span class="nav-item__name">humorous eagle</span>
-          </div>
-          <div class="nav-item">
-            <img src="https://picsum.photos/96" class="nav-item__img" />
-            <span class="nav-item__name">decisive prune</span>
-          </div>
-          <div class="nav-item">
-            <img src="https://picsum.photos/96" class="nav-item__img" />
-            <span class="nav-item__name">receptive fish</span>
-          </div>
-          <div class="nav-item">
-            <img src="https://picsum.photos/96" class="nav-item__img" />
-            <span class="nav-item__name">funny apricots</span>
-          </div>
-          <div class="nav-item">
-            <img src="https://picsum.photos/96" class="nav-item__img" />
-            <span class="nav-item__name">obedient chimpanzees</span>
-          </div>
-          <div class="nav-item">
-            <img src="https://picsum.photos/96" class="nav-item__img" />
-            <span class="nav-item__name">shrewd plum</span>
-          </div>
-          <div class="nav-item">
-            <img src="https://picsum.photos/96" class="nav-item__img" />
-            <span class="nav-item__name">resourceful lobster</span>
-          </div>
-          <div class="nav-item">
-            <img src="https://picsum.photos/96" class="nav-item__img" />
-            <span class="nav-item__name">fantastic bear</span>
-          </div>
-          <div class="nav-item">
-            <img src="https://picsum.photos/96" class="nav-item__img" />
-            <span class="nav-item__name">humorous eagle</span>
-          </div>
-          <div class="nav-item">
-            <img src="https://picsum.photos/96" class="nav-item__img" />
-            <span class="nav-item__name">decisive prune</span>
-          </div>
-          <div class="nav-item">
-            <img src="https://picsum.photos/96" class="nav-item__img" />
-            <span class="nav-item__name">receptive fish</span>
-          </div>
-          <div class="nav-item">
-            <img src="https://picsum.photos/96" class="nav-item__img" />
-            <span class="nav-item__name">funny apricots</span>
-          </div>
-          <div class="nav-item">
-            <img src="https://picsum.photos/96" class="nav-item__img" />
-            <span class="nav-item__name">obedient chimpanzees</span>
-          </div>
-          <div class="nav-item">
-            <img src="https://picsum.photos/96" class="nav-item__img" />
-            <span class="nav-item__name">shrewd plum</span>
-          </div>
-          <div class="nav-item">
-            <img src="https://picsum.photos/96" class="nav-item__img" />
-            <span class="nav-item__name">resourceful lobster</span>
-          </div>
-          <div class="nav-item">
-            <img src="https://picsum.photos/96" class="nav-item__img" />
-            <span class="nav-item__name">fantastic bear</span>
-          </div>
-          <div class="nav-item">
-            <img src="https://picsum.photos/96" class="nav-item__img" />
-            <span class="nav-item__name">humorous eagle</span>
-          </div>
-          <div class="nav-item">
-            <img src="https://picsum.photos/96" class="nav-item__img" />
-            <span class="nav-item__name">decisive prune</span>
-          </div>
-          <div class="nav-item">
-            <img src="https://picsum.photos/96" class="nav-item__img" />
-            <span class="nav-item__name">receptive fish</span>
-          </div>
-          <div class="nav-item">
-            <img src="https://picsum.photos/96" class="nav-item__img" />
-            <span class="nav-item__name">funny apricots</span>
-          </div>
-          <div class="nav-item">
-            <img src="https://picsum.photos/96" class="nav-item__img" />
-            <span class="nav-item__name">receptive fish</span>
-          </div>
+          <div className="nav-item nav-item--blank"></div>
+
+          {edges.map((edge) =>
+            <div className="nav-item" key={edge.node.fields.slug}>
+              <img src="https://picsum.photos/96" className="nav-item__img" />
+              <span className="nav-item__name">{edge.node.frontmatter.title}</span>
+            </div>
+          )}
         </nav>
-        <main class="main-bontent">
-          <header class="page-header">
+        <main className="main-bontent">
+          <header className="page-header">
             header
           </header>
           main
@@ -163,10 +52,8 @@ const IndexTemplate = ({ data, pageContext }: Props) => {
 };
 
 export const query = graphql`
-  query IndexTemplate($postsLimit: Int!, $postsOffset: Int!) {
+  {
     allMarkdownRemark(
-        limit: $postsLimit,
-        skip: $postsOffset,
         filter: { frontmatter: { template: { eq: "post" }, draft: { ne: true } } },
         sort: { order: DESC, fields: [frontmatter___date] }
       ){
