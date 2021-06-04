@@ -3,35 +3,33 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Post from '../components/Post';
+import NavMenu from '../components/NavMenu';
 import { useSiteMetadata } from '../hooks';
-import type { MarkdownRemark } from '../types';
-import bgVid04 from '../assets/vid/bg4.mp4';
+import type { MarkdownRemark, AllMarkdownRemark } from '../types';
 
 type Props = {
   data: {
-    markdownRemark: MarkdownRemark
+    markdownRemark: MarkdownRemark,
+    allMarkdownRemark: AllMarkdownRemark
   }
 };
 
 const PostTemplate = ({ data }: Props) => {
   const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
-  const { frontmatter } = data.markdownRemark;
-  const { title: postTitle, description: postDescription = '' } = frontmatter;
-  const metaDescription = postDescription || siteSubtitle;
-  const socialImageUrl = '';
+  // console.log(data.markdownRemark);
+  // console.log(data.allMarkdownRemark);
 
   return (
-    <Layout title={`${postTitle} | ${siteTitle}`} description={metaDescription} socialImage={socialImageUrl} >
-      <div className="main-background">
-        <video className="background-video" autoPlay playsInline loop muted>
-          <source src={bgVid04} type="video/mp4" />
-          Sorry, your browser doesn't support embedded videos.
-        </video>
-      </div>
-      <div className="main-content">
-        <Sidebar />
-        <Post post={data.markdownRemark} />
-      </div>
+    <Layout title={siteTitle} description={siteSubtitle}>
+      <section className="main-container">
+        <NavMenu posts={data.allMarkdownRemark.edges} selected={data.markdownRemark.fields.slug}/>
+        <main className="main-bontent">
+          <header className="page-header">
+            header
+          </header>
+          <Post post={data.markdownRemark} />
+        </main>
+      </section>
     </Layout>
   );
 };
@@ -50,6 +48,26 @@ export const query = graphql`
         description
         tags
         title
+      }
+    }
+    allMarkdownRemark(
+        filter: { frontmatter: { template: { eq: "post" }, draft: { ne: true } } },
+        sort: { order: DESC, fields: [frontmatter___date] }
+      ){
+      edges {
+        node {
+          fields {
+            slug
+            categorySlug
+          }
+          frontmatter {
+            title
+            date
+            category
+            description
+            thumbnail
+          }
+        }
       }
     }
   }

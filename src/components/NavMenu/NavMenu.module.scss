@@ -1,0 +1,67 @@
+@import '../../assets/scss/variables';
+@import '../../assets/scss/mixins';
+
+:root {
+  --nav-item-width: 64px;
+  --nav-item-width-lg: 96px;
+}
+
+.nav-container {
+  position: relative;
+  flex: 0 0 calc(var(--nav-item-width) * 2);
+}
+
+.nav-menu {
+  position: fixed;
+  z-index: 4000;
+  background-color: #0f0;
+  display: grid;
+  grid-template-columns: var(--nav-item-width);
+  grid-template-rows: repeat(auto-fit, var(--nav-item-width));
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.nav-item {
+  position: relative;
+  width: var(--nav-item-width);
+  height: var(--nav-item-width);
+
+  &--blank {
+    opacity: 0;
+  }
+
+  &--selected {
+    border: 2px dashed red;
+  }
+}
+
+.nav-item-spacer {
+  position: relative;
+  width: calc(var(--nav-item-width) * 2);
+  height: calc(var(--nav-item-width) / 2);
+}
+
+.nav-item__name {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: #ffffff;
+}
+
+@media (min-width: 501px) {
+  .nav-container {
+    flex: 0 0 calc(var(--nav-item-width-lg) * 2 + 7px);
+  }
+
+  .nav-menu {
+    grid-template-columns: var(--nav-item-width-lg) var(--nav-item-width-lg);
+    grid-template-rows: repeat(auto-fit, var(--nav-item-width-lg));
+  }
+  
+  .nav-item {
+    width: var(--nav-item-width-lg);
+    height: var(--nav-item-width-lg);
+  }
+}

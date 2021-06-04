@@ -2,6 +2,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
+import NavMenu from '../components/NavMenu';
 import { useSiteMetadata } from '../hooks';
 import type { PageContext, AllMarkdownRemark } from '../types';
 
@@ -18,28 +19,7 @@ const IndexTemplate = ({ data, pageContext }: Props) => {
   return (
     <Layout title={siteTitle} description={siteSubtitle}>
       <section className="main-container">
-        <nav className="nav-menu">
-          <div className="nav-item">
-            <img src="https://picsum.photos/96" className="nav-item__img" />
-            <span className="nav-item__name">Home</span>
-          </div>
-          <div className="nav-item">
-            <img src="https://picsum.photos/96" className="nav-item__img" />
-            <span className="nav-item__name">CV</span>
-          </div>
-          <div className="nav-item">
-            <img src="https://picsum.photos/96" className="nav-item__img" />
-            <span className="nav-item__name">Links</span>
-          </div>
-          <div className="nav-item nav-item--blank"></div>
-
-          {edges.map((edge) =>
-            <div className="nav-item" key={edge.node.fields.slug}>
-              <img src="https://picsum.photos/96" className="nav-item__img" />
-              <span className="nav-item__name">{edge.node.frontmatter.title}</span>
-            </div>
-          )}
-        </nav>
+        <NavMenu posts={edges} />
         <main className="main-bontent">
           <header className="page-header">
             header
