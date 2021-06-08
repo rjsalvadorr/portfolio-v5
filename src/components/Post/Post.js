@@ -1,10 +1,5 @@
 // @flow strict
 import React from 'react';
-import { Link } from 'gatsby';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
-import Author from './Author';
-import Comments from './Comments';
 import Content from './Content';
 import Meta from './Meta';
 import Tags from './Tags';
@@ -38,15 +33,10 @@ const Post = ({ post }: Props) => {
   const izGallery = isGallery(tagClasses);
 
   const innerClass = izGallery ? `${styles['post__inner']} ${styles['post--gallery__inner']}` : styles['post__inner'];
-  const btnWrapClass = izGallery ? `${styles['post__button-wrapper']} ${styles['post--gallery__button-wrapper']}` : styles['post__button-wrapper'];
-  const btnClass = izGallery ? `${styles['post__home-button']} ${styles['post--gallery__home-button']}` : styles['post__home-button'];
 
   return (
     <div className={styles['post']}>
       <div className={innerClass}>
-        <div className={btnWrapClass}>
-          <Link className={btnClass} to="/"><FontAwesomeIcon icon={faArrowLeft} /></Link>
-        </div>
 
         <div className={styles['post__content']}>
           <Content body={html} title={title} galleryView={izGallery} />

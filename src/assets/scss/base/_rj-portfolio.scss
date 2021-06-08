@@ -218,6 +218,9 @@ figcaption {
 .main-bontent {
   flex: 1 1 80%;
   background-color: #00f;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 
