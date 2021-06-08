@@ -4,6 +4,7 @@ import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Post from '../components/Post';
 import NavMenu from '../components/NavMenu';
+import MainHeader from '../components/MainHeader';
 import { useSiteMetadata } from '../hooks';
 import type { MarkdownRemark, AllMarkdownRemark } from '../types';
 
@@ -18,16 +19,19 @@ const PostTemplate = ({ data }: Props) => {
   const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
   // console.log(data.markdownRemark);
   // console.log(data.allMarkdownRemark);
+  const currentPost = data.markdownRemark;
 
   return (
     <Layout title={siteTitle} description={siteSubtitle}>
       <section className="main-container">
-        <NavMenu posts={data.allMarkdownRemark.edges} selected={data.markdownRemark.fields.slug}/>
+        <NavMenu posts={data.allMarkdownRemark.edges} selected={currentPost.fields.slug}/>
         <main className="main-bontent">
-          <header className="page-header">
-            header
-          </header>
-          <Post post={data.markdownRemark} />
+          <MainHeader
+            title={currentPost.frontmatter.title}
+            subtitle={currentPost.frontmatter.subtitle}
+            blurb="dun knoe fam"
+          />
+          <Post post={currentPost} />
         </main>
       </section>
     </Layout>

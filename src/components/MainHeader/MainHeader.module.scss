@@ -1,0 +1,17 @@
+@import '../../assets/scss/variables';
+@import '../../assets/scss/mixins';
+
+.main-header {
+  background-color: #f00;
+
+  &__title,
+  &__subtitle,
+  &__blurb {
+    display: block;
+  }
+
+  &__title {
+    margin: 0;
+    padding: 0;
+  }
+}

@@ -202,13 +202,6 @@ figcaption {
   --scrollbar-track: orange;
   --scrollbar-thumb: black;
   --scrollbar-width: 9px;
-  --page-header-width: 36px;
-}
-
-.page-header {
-  display: fixed;
-  background-color: #f00;
-  height: var(--page-header-width);
 }
 
 .main-container {

@@ -3,6 +3,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import NavMenu from '../components/NavMenu';
+import MainHeader from '../components/MainHeader';
 import { useSiteMetadata } from '../hooks';
 import type { PageContext, AllMarkdownRemark } from '../types';
 
@@ -21,9 +22,7 @@ const IndexTemplate = ({ data, pageContext }: Props) => {
       <section className="main-container">
         <NavMenu posts={edges} />
         <main className="main-bontent">
-          <header className="page-header">
-            header
-          </header>
+          <MainHeader title="R. J. Salvador" subtitle="Web Developer, Musician" />
           main
         </main>
       </section>
