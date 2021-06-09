@@ -20,7 +20,7 @@ const IndexTemplate = ({ data, pageContext }: Props) => {
   return (
     <Layout title={siteTitle} description={siteSubtitle}>
       <section className="main-container">
-        <NavMenu posts={edges} />
+        <NavMenu posts={edges} isIndex={true} />
         <main className="main-bontent">
           <MainHeader title="R. J. Salvador" subtitle="Web Developer, Musician" />
           main

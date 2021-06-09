@@ -1,7 +1,6 @@
 // @flow strict
 import React from 'react';
 import Content from './Content';
-import Meta from './Meta';
 import Tags from './Tags';
 import styles from './Post.module.scss';
 import type { Node } from '../../types';
@@ -28,7 +27,7 @@ const isGallery = (tagClasses) => {
 const Post = ({ post }: Props) => {
   const { html } = post;
   const { tagSlugs } = post.fields;
-  const { tags, title, date } = post.frontmatter;
+  const { tags, title } = post.frontmatter;
   const tagClasses = tags.map((tag) => tag.toLowerCase().replace(' ', '-'));
   const izGallery = isGallery(tagClasses);
 
@@ -43,7 +42,6 @@ const Post = ({ post }: Props) => {
         </div>
 
         <div className={styles['post__footer']}>
-          <Meta date={date} />
           {tags && tagSlugs && <Tags tags={tags} tagSlugs={tagSlugs} />}
         </div>
       </div>
