@@ -206,15 +206,14 @@ figcaption {
 
 .main-container {
   display: flex;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 .main-bontent {
   flex: 1 1 80%;
   color: #fff;
   background-color: #00f;
-  height: 100vh;
-  overflow-y: auto;
-  overflow-x: hidden;
 }
 
 

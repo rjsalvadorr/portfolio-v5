@@ -1,2 +1,15 @@
 @import '../../assets/scss/variables';
 @import '../../assets/scss/mixins';
+
+.main-hero {
+  background-color: #000;
+  height: 50vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+
+  &__img {
+    object-fit: cover;
+    height: 100%;
+  }
+}

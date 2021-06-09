@@ -2,15 +2,19 @@ import React from 'react';
 import styles from './MainHero.module.scss';
 
 type Props = {
-  src: String,
+  paths: Array,
 };
 
-const MainHero = ({ src }: Props) => {
-  console.log(src);
+const MainHero = ({ paths }: Props) => {
+  console.log(paths);
 
   return (
     <div className={styles["main-hero"]}>
-      <img src={src} />
+      {paths.map((imgPath) => (
+        <div className={styles["main-hero__img-wrap"]} key={imgPath}>
+          <img className={styles["main-hero__img"]} src={imgPath} />
+        </div>
+      ))}
     </div>
   );
 };

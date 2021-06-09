@@ -5,6 +5,7 @@ import Layout from '../components/Layout';
 import Post from '../components/Post';
 import NavMenu from '../components/NavMenu';
 import MainHeader from '../components/MainHeader';
+import MainHero from '../components/MainHero';
 import { useSiteMetadata } from '../hooks';
 import type { MarkdownRemark, AllMarkdownRemark } from '../types';
 
@@ -20,6 +21,10 @@ const PostTemplate = ({ data }: Props) => {
   // console.log(data.markdownRemark);
   // console.log(data.allMarkdownRemark);
   const currentPost = data.markdownRemark;
+  const imagePaths = [
+    '/media/image-0.jpg',
+    '/media/image-1.jpg',
+  ]
 
   return (
     <Layout title={siteTitle} description={siteSubtitle}>
@@ -31,6 +36,7 @@ const PostTemplate = ({ data }: Props) => {
             subtitle={currentPost.frontmatter.subtitle}
             blurb="dun knoe fam"
           />
+          <MainHero paths={imagePaths} />
           <Post post={currentPost} />
         </main>
       </section>
