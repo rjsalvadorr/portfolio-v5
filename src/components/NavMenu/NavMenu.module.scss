@@ -20,7 +20,8 @@
   display: grid;
   grid-template-columns: var(--nav-item-width);
   grid-template-rows: repeat(auto-fit, var(--nav-item-width));
-  height: 100vh;
+  min-height: -webkit-fill-available;
+  height: 103vh;
   overflow-y: scroll;
   overflow-x: hidden;
 }
