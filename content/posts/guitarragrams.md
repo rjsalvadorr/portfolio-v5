@@ -8,6 +8,9 @@ tags:
   - "code project"
   - "guitar"
 thumbnail: media/code/guitarragrams/snapshot.png
+heroes:
+  - media/code/guitarragrams/sketch-1.jpg
+  - media/code/guitarragrams/snapshot.png
 slug: "guitarragrams"
 description: "Visual reference for guitar chord voicings"
 draft: false
@@ -16,8 +19,6 @@ draft: false
 Earlier this year, I was studying chord patterns and wrote them into a document.
 This was a PITA to update, so I made a web app out of it. <!-- more --> I took this opportunity to learn some tech, so I jumped on the Vue bandwagon. I found that the [Vue CLI tools](https://cli.vuejs.org/guide/creating-a-project.html) didn't get in my way,
 and the Vue documentation made for a gentle learning curve.
-
-![yep yep yep](/media/code/guitarragrams/sketch-1.jpg "yep yep")
 
 ## Tools used
 
@@ -34,13 +35,7 @@ With this project, I needed to figure out two things, and all the hard stuff was
     + FretboardMarker
     + PatternGroup
 
-For someone already familiar with web dev frameworks and the Node stack, the view from Vue is majestic.
-
-![yep yep yep](/media/code/guitarragrams/sketch-2.jpg "yep yep")
-
 ## Results
-
-![yep yep yep](/media/code/guitarragrams/snapshot.png "yep yep")
 
 Take a look at [rjsalvadorr.github.io/guitarragrams/](https://rjsalvadorr.github.io/guitarragrams/)  
 For more info, check out the project repository at [github.com/rjsalvadorr/guitarragrams](https://github.com/rjsalvadorr/guitarragrams)

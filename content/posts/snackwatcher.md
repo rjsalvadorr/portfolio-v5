@@ -8,6 +8,9 @@ tags:
   - "code fun"
   - "python"
 thumbnail: media/code/snackwatcher/thumb.jpg
+heroes:
+  - media/code/snackwatcher/snackwatcher-setup.jpg
+  - media/code/snackwatcher/snackwatcher-interface.png
 options:
   - hideDate
 slug: "snackwatcher"
@@ -38,10 +41,6 @@ Upon joining the SnackWatcher team, I worked on the user-facing parts of the sys
 ## Results
 
 It worked! Even if it was easily confused by what we put on the table, it worked!
-
-![yep yep yep](/media/code/snackwatcher/snackwatcher-setup.jpg "yep yep")
-
-![yep yep yep](/media/code/snackwatcher/snackwatcher-interface.png "yep yep")
 
 ![yep yep yep](/media/code/snackwatcher/snackwatcher-slack.png "yep yep")
 

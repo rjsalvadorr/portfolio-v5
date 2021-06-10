@@ -18,13 +18,8 @@ type Props = {
 
 const PostTemplate = ({ data }: Props) => {
   const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
-  // console.log(data.markdownRemark);
-  // console.log(data.allMarkdownRemark);
   const currentPost = data.markdownRemark;
-  const imagePaths = [
-    '/media/image-0.jpg',
-    '/media/image-1.jpg',
-  ]
+  const imagePaths = currentPost.frontmatter.heroes ? currentPost.frontmatter.heroes.map((imgPath) => `/${imgPath}`) : [];
 
   return (
     <Layout title={siteTitle} description={siteSubtitle}>
@@ -58,6 +53,7 @@ export const query = graphql`
         description
         tags
         title
+        heroes
       }
     }
     allMarkdownRemark(
@@ -71,10 +67,6 @@ export const query = graphql`
             categorySlug
           }
           frontmatter {
-            title
-            date
-            category
-            description
             thumbnail
           }
         }

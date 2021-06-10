@@ -8,6 +8,9 @@ tags:
   - "code project"
   - "incomplete"
 thumbnail: media/code/broquest/thumb.jpg
+heroes:
+  - media/code/broquest/broquest-sketch-01.jpg
+  - media/code/broquest/broquest-01.jpg
 options:
   - hideDate
 slug: "broquest"
@@ -39,8 +42,6 @@ And also if we have different types of terrain
 
 No problem, that's gonna be easy. I'm a software magician now.
 
-![yep yep yep](/media/code/broquest/broquest-sketch-01.jpg "yep yep")
-
 ![yep yep yep](/media/code/broquest/broquest-sketch-02.jpg "yep yep")
 
 ## Process
@@ -59,8 +60,6 @@ Over a few weeks, I learned how to assemble all these elements together:
 ![yep yep yep](/media/code/broquest/broquest-dead.jpg "yep yep")
 
 ![yep yep yep](/media/code/broquest/broquest-debug.jpg "yep yep")
-
-![yep yep yep](/media/code/broquest/broquest-01.jpg "yep yep")
 
 ![yep yep yep](/media/code/broquest/broquest-spritesheet.png "yep yep")
 

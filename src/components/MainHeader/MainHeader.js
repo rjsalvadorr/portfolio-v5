@@ -8,7 +8,7 @@ type Props = {
 };
 
 const MainHeader = ({ title, subtitle, blurb }: Props) => {
-  console.log(title, subtitle, blurb);
+  console.log('MainHeader', title, subtitle, blurb);
 
   return (
     <div className={styles["main-header"]}>

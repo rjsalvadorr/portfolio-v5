@@ -9,15 +9,14 @@ tags:
   - "sports"
 target_url: /apps/rise-of-the-raptors/
 thumbnail: media/code/rise-of-the-raptors/thumb.jpg
+heroes:
+  - media/code/rise-of-the-raptors/demo.gif
 slug: "rise-of-the-raptors"
 description: "Infographics on the Toronto Raptors' path to a championship"
 draft: false
 ---
 
 2019 was a very special year for Toronto Raptors fans. After going to the championship parade, I decided to play with infographics showing the Toronto Raptors' path to a championship.
-
-<!-- more -->
-![visual demo](/media/code/rise-of-the-raptors/demo.gif)
 
 ## Tools/resources used
 

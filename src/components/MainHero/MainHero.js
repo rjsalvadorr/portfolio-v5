@@ -6,7 +6,7 @@ type Props = {
 };
 
 const MainHero = ({ paths }: Props) => {
-  console.log(paths);
+  console.log('MainHero', paths);
 
   return (
     <div className={styles["main-hero"]}>
