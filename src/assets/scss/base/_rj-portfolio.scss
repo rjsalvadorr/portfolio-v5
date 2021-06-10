@@ -1,15 +1,17 @@
 @import '../mixins';
 
 :root {
-  --col-scrollbar-track: orange;
-  --col-scrollbar-thumb: black;
-  --scrollbar-width: 9px;
-
+  --col-accent: #5ABAA7;
   --col-main-bg: #222222;
   --col-main-text: #eeeeee;
   --col-content-bg: #dddddd;
   --col-content-text: #111111;
-  --col-highlight-text: #0000aa;
+  --col-highlight-text: var(--col-accent);
+
+  --col-scrollbar-track: var(--col-accent);
+  --col-scrollbar-thumb: var(--col-main-bg);
+
+  --scrollbar-width: 9px;
 }
 
 /** 

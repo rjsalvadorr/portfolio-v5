@@ -14,7 +14,7 @@ const NavMenu = ({ posts, selected, isIndex }: Props) => {
   if (isIndex) {
     homeItemStyle += ' ' + styles["nav-item--selected"];
   }
-  console.log(selected, selectedSlug);
+  console.log(posts, selected, selectedSlug);
 
   return (
     <div className={styles["nav-container"]}>
@@ -27,6 +27,7 @@ const NavMenu = ({ posts, selected, isIndex }: Props) => {
         </div>
 
         {posts.map((postEdge) => {
+          console.log('postEdge', postEdge);
           const postSlug = postEdge.node.fields.slug;
           let itemStyle = styles["nav-item"];
           if (selectedSlug === postSlug) {
@@ -35,8 +36,7 @@ const NavMenu = ({ posts, selected, isIndex }: Props) => {
           return (
             <div className={itemStyle} key={postSlug}>
               <Link to={postSlug || ''}>
-                <img src="https://picsum.photos/96" className={styles["nav-item__img"]} />
-                <span className={styles["nav-item__name"]}>{postEdge.node.frontmatter.title}</span>
+                <img src={`/${postEdge.node.frontmatter.thumbnail}`} className={styles["nav-item__img"]} />
               </Link>
             </div>
           );

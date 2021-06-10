@@ -35,7 +35,7 @@ $color-accent-2: $color-144191-light-blue;
 
 // Typographic
 $typographic-font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-$typographic-font-family-heading: 'Gentium Basic', serif;
+$typographic-font-family-heading: $typographic-font-family;
 
 $typographic-root-font-size: 100;
 $typographic-base-font-size: 16px;
@@ -69,5 +69,3 @@ $layout-breakpoint-xl: 1400px;
 
 $col-box-shadow: rgba(0,0,0,8);
 $col-box-shadow-light: rgba(0,0,0,0.5);
-
-

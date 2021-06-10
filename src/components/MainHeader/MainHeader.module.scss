@@ -12,6 +12,11 @@
     display: block;
   }
 
+  &__subtitle,
+  &__blurb {
+    color: var(--col-highlight-text);
+  }
+
   &__title {
     margin: 0;
     padding: 0;
