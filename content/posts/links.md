@@ -1,14 +1,18 @@
 ---
 title: Links
 subtitle:
+description: Social media, previous work, etc.
 date: 9999-12-29 17:09:42
 template: post
-category: code project
+category: directory
 tags:
   - "code project"
 thumbnail: media/artblog/arabesques/thumb.jpg
+options:
+  - hideDate
 slug: "links"
 draft: false
 ---
 
-Yurr
+- [LinkedIn](https://www.linkedin.com/in/rjsalvadorr/)
+- [GitHub](https://github.com/rjsalvadorr)

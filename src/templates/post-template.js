@@ -1,6 +1,7 @@
 // @flow strict
 import React from 'react';
 import { graphql } from 'gatsby';
+import includes from 'lodash/includes';
 import Layout from '../components/Layout';
 import Post from '../components/Post';
 import NavMenu from '../components/NavMenu';
@@ -31,6 +32,7 @@ const PostTemplate = ({ data }: Props) => {
             date={currentPost.frontmatter.date}
             category={currentPost.frontmatter.category}
             blurb={currentPost.frontmatter.description}
+            hideDate={includes(currentPost.frontmatter.options, 'hideDate')}
           />
           <MainHero paths={imagePaths} />
           <Post post={currentPost} />
@@ -56,6 +58,7 @@ export const query = graphql`
         description
         heroes
         tags
+        options
       }
     }
     allMarkdownRemark(
