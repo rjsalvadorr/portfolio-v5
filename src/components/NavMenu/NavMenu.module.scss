@@ -1,10 +1,8 @@
-@import '../../assets/scss/variables';
 @import '../../assets/scss/mixins';
 
 :root {
   --nav-item-width: 64px;
   --nav-item-width-lg: 96px;
-  --col-nav-bg: #000000;
   --col-nav-selected: #ff0000;
 }
 
@@ -16,7 +14,7 @@
 .nav-menu {
   position: fixed;
   z-index: 4000;
-  background-color: var(--col-nav-bg);
+  background-color: var(--col-main-bg);
   display: grid;
   grid-template-columns: var(--nav-item-width);
   grid-template-rows: repeat(auto-fit, var(--nav-item-width));

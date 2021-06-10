@@ -2,7 +2,9 @@
 @import '../../assets/scss/mixins';
 
 .main-header {
-  background-color: #f00;
+  color: var(--col-main-text);
+  background-color: var(--col-main-bg);
+  padding: 1rem 1.5rem;
 
   &__title,
   &__subtitle,

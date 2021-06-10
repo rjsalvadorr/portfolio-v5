@@ -1,5 +1,17 @@
 @import '../mixins';
 
+:root {
+  --col-scrollbar-track: orange;
+  --col-scrollbar-thumb: black;
+  --scrollbar-width: 9px;
+
+  --col-main-bg: #222222;
+  --col-main-text: #eeeeee;
+  --col-content-bg: #dddddd;
+  --col-content-text: #111111;
+  --col-highlight-text: #0000aa;
+}
+
 /** 
  * RJ Portfolio overrides
  */
@@ -8,6 +20,7 @@
   font-size: $typographic-root-font-size;
   margin: 0;
   height: -webkit-fill-available;
+  background-color: var(--col-main-bg);
 }
 
 body {
@@ -200,12 +213,6 @@ figcaption {
 * PORTFOLIO JUNE 2021
 **********************************************************/
 
-:root {
-  --scrollbar-track: orange;
-  --scrollbar-thumb: black;
-  --scrollbar-width: 9px;
-}
-
 .main-container {
   display: flex;
   max-width: 1280px;
@@ -214,8 +221,9 @@ figcaption {
 
 .main-bontent {
   flex: 1 1 80%;
-  color: #fff;
-  background-color: #00f;
+  background-color: var(--col-content-bg);
+  color: var(--col-content-text);
+  min-height: 100vh;
 }
 
 
@@ -227,7 +235,7 @@ figcaption {
 /* Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+  scrollbar-color: var(--col-scrollbar-thumb) var(--col-scrollbar-track);
 }
 
 /* Chrome, Edge, and Safari */
@@ -236,10 +244,10 @@ figcaption {
 }
 
 *::-webkit-scrollbar-track {
-  background: var(--scrollbar-track);
+  background: var(--col-scrollbar-track);
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: var(--scrollbar-thumb);
-  border: 1px solid var(--scrollbar-track);
+  background-color: var(--col-scrollbar-thumb);
+  border: 1px solid var(--col-scrollbar-track);
 }

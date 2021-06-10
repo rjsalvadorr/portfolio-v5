@@ -2,5 +2,10 @@
 @import '../../assets/scss/mixins';
 
 .post {
-  color: #eeeeee;
+  color: var(--col-content-text);
+  padding: 1rem 1.5rem;
+
+  a {
+    color: var(--col-highlight-text)
+  }
 }
