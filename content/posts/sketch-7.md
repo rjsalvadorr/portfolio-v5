@@ -3,7 +3,7 @@ title: Rising Pillars
 subtitle:
 date: 2020-01-29 12:00:00
 template: post
-category: code sketches
+category: code sketch
 tags:
   - "code sketch"
   - "threejs"
@@ -15,7 +15,7 @@ draft: false
 ---
 
 <style type="text/css">
-.resp-container {
+.threejs-viz-container {
   position: relative;
   overflow: hidden;
   padding-top: 56.25%;
@@ -31,7 +31,7 @@ draft: false
 }
 </style>
 
-<div class="resp-container">
+<div class="threejs-viz-container">
   <iframe id="sketch-7"
       class="resp-iframe"
       title="sketch-7"

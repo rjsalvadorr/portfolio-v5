@@ -29,7 +29,7 @@ const Post = ({ post }: Props) => {
   const tagClasses = tags.map((tag) => tag.toLowerCase().replace(' ', '-'));
   const izGallery = isGallery(tagClasses);
 
-  const innerClass = izGallery ? `${styles['post__inner']} ${styles['post--gallery__inner']}` : styles['post__inner'];
+  const innerClass = izGallery ? 'post__inner post_inner--gallery' : 'post__inner';
 
   return (
     <div className={styles['post']}>

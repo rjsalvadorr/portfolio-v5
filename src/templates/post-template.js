@@ -28,8 +28,9 @@ const PostTemplate = ({ data }: Props) => {
         <main className="main-bontent">
           <MainHeader
             title={currentPost.frontmatter.title}
-            subtitle={currentPost.frontmatter.subtitle}
-            blurb="dun knoe fam"
+            date={currentPost.frontmatter.date}
+            category={currentPost.frontmatter.category}
+            blurb={currentPost.frontmatter.description}
           />
           <MainHero paths={imagePaths} />
           <Post post={currentPost} />
@@ -49,11 +50,12 @@ export const query = graphql`
         tagSlugs
       }
       frontmatter {
-        date
-        description
-        tags
         title
+        date
+        category
+        description
         heroes
+        tags
       }
     }
     allMarkdownRemark(

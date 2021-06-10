@@ -1,4 +1,5 @@
 import React from 'react';
+import isEmpty from 'lodash/isEmpty';
 import styles from './MainHero.module.scss';
 
 type Props = {
@@ -7,6 +8,10 @@ type Props = {
 
 const MainHero = ({ paths }: Props) => {
   console.log('MainHero', paths);
+
+  if (isEmpty(paths)) {
+    return null;
+  }
 
   return (
     <div className={styles["main-hero"]}>

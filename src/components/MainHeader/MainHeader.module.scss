@@ -6,19 +6,27 @@
   background-color: var(--col-main-bg);
   padding: 1rem 1.5rem;
 
-  &__title,
-  &__subtitle,
-  &__blurb {
-    display: block;
-  }
-
-  &__subtitle,
-  &__blurb {
+  &__info {
     color: var(--col-highlight-text);
   }
 
-  &__title {
+  &__title,
+  &__info, 
+  &__details {
     margin: 0;
     padding: 0;
+  }
+
+  &__info {
+    text-transform: uppercase;
+    font-size: $typographic-small-font-size - 3px;
+    letter-spacing: 0.75px;
+    line-height: 1;
+    margin: 0.1rem 0 0.4rem;
+  }
+
+  &__details {
+    font-size: $typographic-base-font-size - 1px;
+    line-height: 1.4rem;
   }
 }

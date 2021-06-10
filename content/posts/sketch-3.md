@@ -3,7 +3,7 @@ title: sketch no. 3
 subtitle:
 date: 2019-04-03 12:00:00
 template: post
-category: code sketches
+category: code sketch
 tags:
   - "code sketch"
   - "threejs"
@@ -15,7 +15,7 @@ draft: true
 ---
 
 <style type="text/css">
-.resp-container {
+.threejs-viz-container {
   position: relative;
   overflow: hidden;
   padding-top: 56.25%;
@@ -31,7 +31,7 @@ draft: true
 }
 </style>
 
-<div class="resp-container">
+<div class="threejs-viz-container">
   <iframe id="sketch-3"
       class="resp-iframe"
       title="sketch-3"
