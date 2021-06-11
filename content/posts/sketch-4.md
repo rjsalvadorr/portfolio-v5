@@ -34,4 +34,4 @@ draft: false
   </iframe>
 </div>
 
-See the code at [GitHub](https://github.com/rjsalvadorr/portfolio-v4a/blob/master/src/components/visualizations/three-city.js)
+My intro to using basic [three.js](https://threejs.org/) functions. Each building in this "city" features a randomly generated height and colour.

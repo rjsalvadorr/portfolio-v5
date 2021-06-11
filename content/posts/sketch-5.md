@@ -34,4 +34,4 @@ draft: false
   </iframe>
 </div>
 
-See the code at [GitHub](https://github.com/rjsalvadorr/portfolio-v4a/blob/master/src/components/visualizations/dynamic-grid.js)
+The idea here was to play with multiplied sine functions to create a visible "wave" over time. Combining simple functions makes for cool interactions with the long and short wave rhythms.

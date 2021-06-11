@@ -34,4 +34,4 @@ draft: false
   </iframe>
 </div>
 
-See the code at...
+Again, this uses combined sine waves from earlier code sketches, but with the wave output displayed as the height of scattered pillars. That wave movement looks a lot cooler in 3D.

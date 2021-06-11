@@ -34,4 +34,4 @@ draft: false
   </iframe>
 </div>
 
-See the code at [GitHub](https://github.com/rjsalvadorr/portfolio-v4a/blob/master/src/components/visualizations/broken-grid.js)
+This sketch has the same idea as the "Dynamic Grid", but the multiplied sine wave output is expressed as brightness in a randomly-generated abstract grid.

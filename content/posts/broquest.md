@@ -40,8 +40,6 @@ So we need a way to show only relevant events around the player
 If an object has different states, or can be seen from multiple angles, we needed more graphics for it.
 And also if we have different types of terrain
 
-![yep yep yep](/media/code/broquest/broquest-sketch-02.jpg "yep yep")
-
 ## Process
 
 I ended up writing a game engine from scratch by walking through an SDL tutorial.
