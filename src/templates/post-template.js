@@ -29,6 +29,7 @@ const PostTemplate = ({ data }: Props) => {
         <main className="main-bontent">
           <MainHeader
             title={currentPost.frontmatter.title}
+            subtitle={currentPost.frontmatter.subtitle}
             date={currentPost.frontmatter.date}
             category={currentPost.frontmatter.category}
             blurb={currentPost.frontmatter.description}
@@ -53,6 +54,7 @@ export const query = graphql`
       }
       frontmatter {
         title
+        subtitle
         date
         category
         description

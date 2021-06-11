@@ -15,12 +15,6 @@ draft: true
 ---
 
 <style type="text/css">
-.threejs-viz-container {
-  position: relative;
-  overflow: hidden;
-  padding-top: 56.25%;
-  margin-bottom: 20px;
-}
 .resp-iframe {
     position: absolute;
     top: 0;

@@ -3,6 +3,7 @@ import styles from './MainHeader.module.scss';
 
 type Props = {
   title: string,
+  subtitle: string,
   date: string,
   category: string,
   blurb: string,
@@ -10,8 +11,16 @@ type Props = {
   hideDate: boolean,
 };
 
-const MainHeader = ({ title, date, category, blurb, isIndex, hideDate }: Props) => {
-  console.log('MainHeader', title, date, category, blurb, isIndex, hideDate);
+const MainHeader = ({
+  title,
+  subtitle,
+  date,
+  category,
+  blurb,
+  isIndex,
+  hideDate
+}: Props) => {
+  console.log('MainHeader', title, subtitle, date, category, blurb, isIndex, hideDate);
   let detailStyle = styles["main-header__details"];
   if (isIndex) {
     detailStyle += ` ${styles["main-header__details--index"]}`;
@@ -24,6 +33,11 @@ const MainHeader = ({ title, date, category, blurb, isIndex, hideDate }: Props) 
         {date && !hideDate &&
           <span className={styles["main-header__date"]}>
             { new Date(date).toLocaleDateString('en-US', { year: 'numeric', month: 'short' })}&nbsp; — &nbsp;
+          </span>
+        }
+        {hideDate && subtitle &&
+          <span className={styles["main-header__date"]}>
+            {subtitle}&nbsp; — &nbsp;
           </span>
         }
         {category && 

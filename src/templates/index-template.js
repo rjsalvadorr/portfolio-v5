@@ -1,6 +1,6 @@
 // @flow strict
 import React from 'react';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import Layout from '../components/Layout';
 import NavMenu from '../components/NavMenu';
 import MainHeader from '../components/MainHeader';
@@ -31,19 +31,19 @@ const IndexTemplate = ({ data, pageContext }: Props) => {
           <MainHero paths={imagePaths} />
           <div className="index-bontent">
             <p>
-              Bacon ipsum dolor amet strip steak irure cow dolore short ribs. Ut pork loin chuck, bresaola deserunt nisi dolore reprehenderit non rump nostrud do meatball shoulder ham. Sint id reprehenderit et dolore. Boudin qui do culpa. Adipisicing capicola short ribs, consectetur sint anim tri-tip ham. Voluptate doner et, in excepteur filet mignon porchetta shoulder. Doner picanha drumstick, corned beef pork chop cillum ullamco nulla landjaeger ribeye kielbasa enim qui pork reprehenderit.
+              Hi, I'm a software developer with 6 years of experience in the web-dev industry. 
+              Currently, I'm transitioning into a career in architecture technology, but 
+              I'm generally available for part-time software work or small contracts.<br />
+              Feel free to check out my <Link to="https://www.google.ca">resume</Link> for more 
+              details. If you'd like to get in touch, drop me a line at <Link to="https://www.linkedin.com/in/rjsalvadorr/">LinkedIn</Link>
             </p>
+            <h2>Skills</h2>
             <p>
               Lorem ut flank short ribs biltong duis pariatur ipsum tongue do culpa. Exercitation chicken tenderloin, pig ullamco kielbasa pariatur ball tip anim leberkas eu ground round. Beef ribs fugiat strip steak culpa nisi. Short loin brisket short ribs tongue, chicken consectetur aliqua tri-tip et hamburger jowl qui.
             </p>
+            <h2>Interests & Hobbies</h2>
             <p>
               Shank consequat swine frankfurter, brisket shankle ball tip cillum velit et. Pastrami picanha excepteur, meatloaf aliqua turkey kielbasa biltong est swine consectetur. Sausage chuck voluptate shankle, eu nostrud picanha brisket strip steak dolore. Aute cupim filet mignon occaecat pork chop. Lorem ribeye reprehenderit ham hock tri-tip nostrud culpa shankle ea. In hamburger adipisicing fugiat enim excepteur nostrud elit sunt. Alcatra kevin ea, dolor burgdoggen ham hock buffalo tri-tip ut chicken dolore sausage.
-            </p>
-            <p>
-              Enim ball tip labore cow adipisicing aliqua, elit dolore bacon consectetur. Tongue bresaola doner boudin mollit nulla tenderloin jerky in. Officia jowl lorem frankfurter in turkey ipsum, nulla chuck sed quis consectetur fugiat. Shankle pork loin pork chop, meatball incididunt sed ullamco mollit in non. Mollit officia proident filet mignon, doner irure quis prosciutto fugiat consectetur beef ribs meatloaf turducken. Ullamco commodo shoulder cupim occaecat, leberkas bresaola mollit aliqua.
-            </p>
-            <p>
-              Sunt ad aliqua ball tip venison ut exercitation porchetta rump pastrami tenderloin shank pariatur. Ut jowl incididunt venison duis, dolore shankle culpa id tempor prosciutto. Culpa incididunt occaecat corned beef ipsum landjaeger pork loin officia. Jowl tempor ex, ut esse kevin porchetta fatback shank cupidatat.
             </p>
           </div>
         </main>
