@@ -16,7 +16,7 @@ description: "Infographics on the Toronto Raptors' path to a championship"
 draft: false
 ---
 
-2019 was a very special year for Toronto Raptors fans. After going to the championship parade, I decided to play with infographics showing the Toronto Raptors' path to a championship.
+2019 was a very special year for Toronto Raptors fans. After going to the championship parade, I decided to try and use data visualization to tell the story of the Raptors' path to a championship.
 
 ## Tools/resources used
 
@@ -26,5 +26,5 @@ draft: false
 
 ## Results
 
-Take a look at [reluctant-adjustments.com/apps/rise-of-the-raptors/](http://www.reluctant-adjustments.com/apps/rise-of-the-raptors/)  
+Take a look at [rj-salvador.com/apps/rise-of-the-raptors/](http://www.reluctant-adjustments.com/apps/rise-of-the-raptors/)  
 For more info, check out the project repository at [github.com/rjsalvadorr/rise-of-the-raps](https://github.com/rjsalvadorr/rise-of-the-raps)
