@@ -26,7 +26,7 @@ const IndexTemplate = ({ data, pageContext }: Props) => {
       <section className="main-container">
         <NavMenu posts={edges} isIndex={true} />
         <main className="main-bontent">
-          <MainHeader title="R. J. Salvador" blurb="Web Developer" isIndex />
+          <MainHeader title="R. J. Salvador" category="Web Developer" isIndex />
           <MainHero paths={imagePaths} />
           <div className="index-bontent">
             <p>

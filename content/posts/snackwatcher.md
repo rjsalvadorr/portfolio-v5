@@ -1,6 +1,6 @@
 ---
 title: SnackWatcher
-subtitle: Fall 2015 to Spring 2016
+subtitle: Fall 2015 - Spring 2016
 date: 2017-01-08 17:10:50
 template: post
 category: code project

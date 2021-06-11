@@ -1,17 +1,21 @@
 @import '../mixins';
 
 :root {
-  --col-accent: #5ABAA7;
-  --col-accent2: #E0B735;
+  --col-accent: #ffb400;
+  --col-accent2: #ea5455;
 
-  --col-main-bg: #222222;
+  --col-main-bg: #131b25;
   --col-main-text: #eeeeee;
-  --col-content-bg: #dddddd;
+
+  --col-header-bg: #243347;
+  --col-header-accent: var(--col-accent2);
+  
+  --col-content-bg: #f6f6f6;
   --col-content-text: #111111;
-  --col-highlight-text: var(--col-accent);
+  --col-highlight-text: var(--col-header-bg);
 
   --col-scrollbar-track: var(--col-accent);
-  --col-scrollbar-thumb: var(--col-main-bg);
+  --col-scrollbar-thumb: var(--col-header-bg);
   --col-nav-selected: var(--col-accent2);
 
   --scrollbar-width: 9px;

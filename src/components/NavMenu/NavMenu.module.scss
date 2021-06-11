@@ -44,11 +44,11 @@
 
   &--svg {
     padding: 0.8rem;
-    background-color: #aa0000;
+    background-color: var(--col-header-bg);
   }
 
   &--home {
-    background-color: #0000aa;
+    background-color: var(--col-accent);
   }
 
   img {
