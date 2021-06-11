@@ -7,7 +7,7 @@ template: post
 category: directory
 tags:
   - "code project"
-thumbnail: media/artblog/arabesques/thumb.jpg
+thumbnail: link-icon.svg
 options:
   - hideDate
 slug: "links"
