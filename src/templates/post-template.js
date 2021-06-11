@@ -1,38 +1,44 @@
 // @flow strict
 import React from 'react';
 import { graphql } from 'gatsby';
+import includes from 'lodash/includes';
 import Layout from '../components/Layout';
-import Sidebar from '../components/Sidebar';
 import Post from '../components/Post';
+import NavMenu from '../components/NavMenu';
+import MainHeader from '../components/MainHeader';
+import MainHero from '../components/MainHero';
 import { useSiteMetadata } from '../hooks';
-import type { MarkdownRemark } from '../types';
-import bgVid04 from '../assets/vid/bg4.mp4';
+import type { MarkdownRemark, AllMarkdownRemark } from '../types';
 
 type Props = {
   data: {
-    markdownRemark: MarkdownRemark
+    markdownRemark: MarkdownRemark,
+    allMarkdownRemark: AllMarkdownRemark
   }
 };
 
 const PostTemplate = ({ data }: Props) => {
   const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
-  const { frontmatter } = data.markdownRemark;
-  const { title: postTitle, description: postDescription = '' } = frontmatter;
-  const metaDescription = postDescription || siteSubtitle;
-  const socialImageUrl = '';
+  const currentPost = data.markdownRemark;
+  const imagePaths = currentPost.frontmatter.heroes ? currentPost.frontmatter.heroes.map((imgPath) => `/${imgPath}`) : [];
 
   return (
-    <Layout title={`${postTitle} | ${siteTitle}`} description={metaDescription} socialImage={socialImageUrl} >
-      <div className="main-background">
-        <video className="background-video" autoPlay playsInline loop muted>
-          <source src={bgVid04} type="video/mp4" />
-          Sorry, your browser doesn't support embedded videos.
-        </video>
-      </div>
-      <div className="main-content">
-        <Sidebar />
-        <Post post={data.markdownRemark} />
-      </div>
+    <Layout title={siteTitle} description={siteSubtitle}>
+      <section className="main-container">
+        <NavMenu posts={data.allMarkdownRemark.edges} selected={currentPost.fields.slug}/>
+        <main className="main-bontent">
+          <MainHeader
+            title={currentPost.frontmatter.title}
+            subtitle={currentPost.frontmatter.subtitle}
+            date={currentPost.frontmatter.date}
+            category={currentPost.frontmatter.category}
+            blurb={currentPost.frontmatter.description}
+            hideDate={includes(currentPost.frontmatter.options, 'hideDate')}
+          />
+          <MainHero paths={imagePaths} />
+          <Post post={currentPost} />
+        </main>
+      </section>
     </Layout>
   );
 };
@@ -47,10 +53,30 @@ export const query = graphql`
         tagSlugs
       }
       frontmatter {
-        date
-        description
-        tags
         title
+        subtitle
+        date
+        category
+        description
+        heroes
+        tags
+        options
+      }
+    }
+    allMarkdownRemark(
+        filter: { frontmatter: { template: { eq: "post" }, draft: { ne: true } } },
+        sort: { order: DESC, fields: [frontmatter___date] }
+      ){
+      edges {
+        node {
+          fields {
+            slug
+            categorySlug
+          }
+          frontmatter {
+            thumbnail
+          }
+        }
       }
     }
   }

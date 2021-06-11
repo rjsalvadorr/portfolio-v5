@@ -3,12 +3,12 @@
 module.exports = {
   url: 'https://lumen.netlify.com',
   pathPrefix: '/',
-  title: 'reluctant adjustments',
-  subtitle: 'blog by RJ Salvador',
+  title: 'rjsalvadorr.com',
+  subtitle: 'portfolio',
   copyright: '© rjsalvadorr 2021',
   disqusShortname: '',
   postsPerPage: 6,
-  googleAnalyticsId: 'UA-73379983-2',
+  googleAnalyticsId: ' ',
   useKatex: false,
   menu: [
     {
@@ -27,7 +27,7 @@ module.exports = {
   author: {
     name: 'RJ Salvador',
     photo: '/logo-white.png',
-    bio: 'Blogged by RJ Salvador, a javascribe based in Toronto',
+    bio: 'RJ Salvador is a javascribe based in Toronto, Canada',
     contacts: {
       email: 'rjsalvadorr@gmail.com',
       facebook: '',

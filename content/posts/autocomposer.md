@@ -3,19 +3,20 @@ title: AutoComposer
 subtitle:
 date: 2017-04-30 13:22:43
 template: post
-category: code projects
+category: code project
 tags:
   - "code project"
   - "music composition"
 thumbnail: media/code/autocomposer/thumb.png
+heroes:
+  - media/code/autocomposer/autocomposer-sketch-02.jpg
+  - media/code/autocomposer/snapshot.png
 slug: "autocomposer"
 description: "Web app that automagically creates musical melodies"
 draft: false
 ---
 
 I've always wanted to make software that did something with music. <!-- more --> That led me to play with JS libraries out there that can handle music theory, playback, and notation. Slowly, I started to think of ways to tie this all together to build an automatic music composer.
-
-![yep yep yep](/media/code/autocomposer/autocomposer-sketch-02.jpg "yep yep")
 
 I had a few features in mind when building this:
 
@@ -24,8 +25,6 @@ I had a few features in mind when building this:
 - downloading the melody (and accompaniment) as a MIDI file, for future playback or tinkering
 
 Maybe it'd be a useful tool for exploring different ways to move through a chord progression. Or for brainstorming when writing a musical composition.
-
-![yep yep yep](/media/code/autocomposer/autocomposer-sketch-03.jpg "yep yep")
 
 ## Tools used
 
@@ -54,10 +53,8 @@ The easiest way to create a smooth melody that sounds good when played with chor
 
 ## Results
 
-Take a look at [reluctant-adjustments.com/apps/autocomposer/](http://www.reluctant-adjustments.com/apps/autocomposer/)  
+Take a look at [rjsalvadorr.com/apps/autocomposer/](http://www.rjsalvadorr.com/apps/autocomposer/)  
 For more info, check out the [project wiki](https://github.com/rjsalvadorr/autocomposer-js/wiki) and [repository](https://github.com/rjsalvadorr/autocomposer-js).
-
-![yep yep yep](/media/code/autocomposer/snapshot.png "yep yep")
 
 The AutoComposer is doing exactly what I want it to do. And it turns out that modern Javascript is really fun to play with! Although I have a lot more in mind for the AutoComposer, and a web browser might not be the best environment for those future plans. I may expand the music generation code and have it run on a proper web server so I can do more complicated (and exciting) things with music and code.
 

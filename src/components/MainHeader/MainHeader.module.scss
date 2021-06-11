@@ -1,0 +1,36 @@
+@import '../../assets/scss/variables';
+@import '../../assets/scss/mixins';
+
+.main-header {
+  color: var(--col-main-text);
+  background-color: var(--col-header-bg);
+  padding: 1.5rem 2rem 2rem;
+
+  &__info {
+    color: var(--col-header-accent);
+    font-weight: bold;
+  }
+
+  &__title,
+  &__info, 
+  &__details {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__info {
+    text-transform: uppercase;
+    font-size: $typographic-small-font-size - 1px;
+    letter-spacing: 0.8px;
+    line-height: 1;
+    margin: 0.1rem 0 0.4rem;
+  }
+
+  &__details {
+    line-height: 1.4rem;
+
+    &--index {
+      color: var(--col-header-accent);
+    }
+  }
+}

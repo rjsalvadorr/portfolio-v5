@@ -3,11 +3,14 @@ title: BroQuest
 subtitle: Winter 2012 - Summer 2013
 date: 2017-01-08 17:07:17
 template: post
-category: code projects
+category: code project
 tags:
   - "code project"
   - "incomplete"
 thumbnail: media/code/broquest/thumb.jpg
+heroes:
+  - media/code/broquest/broquest-sketch-01.jpg
+  - media/code/broquest/broquest-01.jpg
 options:
   - hideDate
 slug: "broquest"
@@ -37,15 +40,7 @@ So we need a way to show only relevant events around the player
 If an object has different states, or can be seen from multiple angles, we needed more graphics for it.
 And also if we have different types of terrain
 
-No problem, that's gonna be easy. I'm a software magician now.
-
-![yep yep yep](/media/code/broquest/broquest-sketch-01.jpg "yep yep")
-
-![yep yep yep](/media/code/broquest/broquest-sketch-02.jpg "yep yep")
-
 ## Process
-
-It wasn't easy. If I was a software magician then, I was a very inept one.
 
 I ended up writing a game engine from scratch by walking through an SDL tutorial.
 Over a few weeks, I learned how to assemble all these elements together:
@@ -60,8 +55,6 @@ Over a few weeks, I learned how to assemble all these elements together:
 
 ![yep yep yep](/media/code/broquest/broquest-debug.jpg "yep yep")
 
-![yep yep yep](/media/code/broquest/broquest-01.jpg "yep yep")
-
 ![yep yep yep](/media/code/broquest/broquest-spritesheet.png "yep yep")
 
 ## Results
@@ -70,9 +63,5 @@ Unfortunately, we stopped working on this when the summer ended and we just got 
 I went back to school, and my brother got a bit more busy at work.
 
 I learned how much effort it took to build a good game.
-Hell, building a _playable_ game feels like it's an achievement in itself.
-All of this gave me tons of respect for serious game devs.
-
-Game dev'ing is really fun stuff though. It let me understand Bob Ross's feelings about the canvas:
-
-> See how you can move things around? You have unlimited power on this canvas -- can literally, literally move mountains
+Simply building a _playable_ game feels like an achievement in itself.
+All this work gave me tons of respect for serious game devs.

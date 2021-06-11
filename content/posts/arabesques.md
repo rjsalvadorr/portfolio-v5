@@ -8,12 +8,10 @@ tags:
   - "painting"
 thumbnail: media/artblog/arabesques/thumb.jpg
 slug: "arabesques"
-draft: false
+draft: true
 ---
 
 I painted these after a vacation to Egypt. The art and architecture of Old Cairo were especially inspiring.
-
-<!-- more -->
 
 Both works are acrylic on canvas (24" x 18"), finished with semi-gloss varnish.
 

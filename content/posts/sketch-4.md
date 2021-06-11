@@ -3,7 +3,7 @@ title: Three City
 subtitle:
 date: 2019-05-15 12:00:00
 template: post
-category: code sketches
+category: code sketch
 tags:
   - "code sketch"
   - "threejs"
@@ -15,12 +15,6 @@ draft: false
 ---
 
 <style type="text/css">
-.resp-container {
-  position: relative;
-  overflow: hidden;
-  padding-top: 56.25%;
-  margin-bottom: 20px;
-}
 .resp-iframe {
     position: absolute;
     top: 0;
@@ -31,7 +25,7 @@ draft: false
 }
 </style>
 
-<div class="resp-container">
+<div class="threejs-viz-container">
   <iframe id="sketch-4"
       class="resp-iframe"
       title="sketch-4"
@@ -40,4 +34,4 @@ draft: false
   </iframe>
 </div>
 
-See the code at [GitHub](https://github.com/rjsalvadorr/portfolio-v4a/blob/master/src/components/visualizations/three-city.js)
+My intro to using basic [three.js](https://threejs.org/) functions. Each building in this "city" features a randomly generated height and colour.

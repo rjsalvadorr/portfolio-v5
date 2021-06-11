@@ -1,14 +1,12 @@
 // @flow strict
 import React from 'react';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import Layout from '../components/Layout';
-import Sidebar from '../components/Sidebar';
-import Feed from '../components/Feed';
-import Page from '../components/Page';
-import Pagination from '../components/Pagination';
+import NavMenu from '../components/NavMenu';
+import MainHeader from '../components/MainHeader';
+import MainHero from '../components/MainHero';
 import { useSiteMetadata } from '../hooks';
 import type { PageContext, AllMarkdownRemark } from '../types';
-import bgVid01 from '../assets/vid/bg1.mp4';
 
 type Props = {
   data: AllMarkdownRemark,
@@ -17,48 +15,37 @@ type Props = {
 
 const IndexTemplate = ({ data, pageContext }: Props) => {
   const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
-
-  const {
-    currentPage,
-    hasNextPage,
-    hasPrevPage,
-    prevPagePath,
-    nextPagePath
-  } = pageContext;
-
   const { edges } = data.allMarkdownRemark;
-  const pageTitle = currentPage > 0 ? `All Posts, page ${currentPage}` : null;
-  console.log(pageTitle);
+  console.debug(data, pageContext, edges.map((edge) => edge.node));
+  const imagePaths = [
+    '/media/biz-1.jpg',
+  ]
 
   return (
     <Layout title={siteTitle} description={siteSubtitle}>
-      <div className="main-background">
-        <video className="background-video" autoPlay playsInline loop muted>
-          <source src={bgVid01} type="video/mp4" />
-          Sorry, your browser doesn't support embedded videos.
-        </video>
-      </div>
-      <div className="main-content">
-        <Sidebar isIndex />
-        <Page title={pageTitle} isIndex>
-          <Feed edges={edges} />
-          <Pagination
-            prevPagePath={prevPagePath}
-            nextPagePath={nextPagePath}
-            hasPrevPage={hasPrevPage}
-            hasNextPage={hasNextPage}
-          />
-        </Page>
-      </div>
+      <section className="main-container">
+        <NavMenu posts={edges} isIndex={true} />
+        <main className="main-bontent">
+          <MainHeader title="R. J. Salvador" category="Web Developer" isIndex />
+          <MainHero paths={imagePaths} />
+          <div className="index-bontent">
+            <p>
+              Hi, I'm a software developer with 6 years of experience in the web-dev industry. 
+              Currently, I'm transitioning into a career in architecture technology, but 
+              I'm generally available for part-time software work or small contracts.<br />
+              Feel free to check out my <a href="/rj-salvador-resume-2021-06.pdf" target="_blank">resume</a> for more 
+              details. If you'd like to get in touch, drop me a line at <Link to="https://www.linkedin.com/in/rjsalvadorr/">LinkedIn</Link>
+            </p>
+          </div>
+        </main>
+      </section>
     </Layout>
   );
 };
 
 export const query = graphql`
-  query IndexTemplate($postsLimit: Int!, $postsOffset: Int!) {
+  {
     allMarkdownRemark(
-        limit: $postsLimit,
-        skip: $postsOffset,
         filter: { frontmatter: { template: { eq: "post" }, draft: { ne: true } } },
         sort: { order: DESC, fields: [frontmatter___date] }
       ){

@@ -1,11 +1,35 @@
 @import '../mixins';
 
+:root {
+  --col-accent: #ffb400;
+  --col-accent2: #ea5455;
+
+  --col-main-bg: #131b25;
+  --col-main-text: #eeeeee;
+
+  --col-header-bg: #243347;
+  --col-header-accent: var(--col-accent2);
+  
+  --col-content-bg: #f6f6f6;
+  --col-content-text: #111111;
+  --col-highlight-text: var(--col-header-bg);
+
+  --col-scrollbar-track: var(--col-accent);
+  --col-scrollbar-thumb: var(--col-header-bg);
+  --col-nav-selected: var(--col-accent2);
+
+  --scrollbar-width: 9px;
+}
+
 /** 
  * RJ Portfolio overrides
  */
 
  html {
   font-size: $typographic-root-font-size;
+  margin: 0;
+  height: -webkit-fill-available;
+  background-color: var(--col-main-bg);
 }
 
 body {
@@ -32,35 +56,35 @@ h6 {
 }
 
 h1 {
-  font-size: $typographic-base-font-size * 2.5;
+  font-size: $typographic-base-font-size * 2.288;
   @include line-height(2);
   @include margin-top(4);
   @include margin-bottom(1);
 }
 
 h2 {
-  font-size: $typographic-base-font-size * 1.6875;
+  font-size: $typographic-base-font-size * 1.939;
   @include line-height(1.5);
   @include margin-top(2);
   @include margin-bottom(.5);
 }
 
 h3 {
-  font-size: $typographic-base-font-size * 1.375;
+  font-size: $typographic-base-font-size * 1.643;
   @include line-height(1);
   @include margin-top(2);
   @include margin-bottom(.5);
 }
 
 h4 {
-  font-size: $typographic-base-font-size * 1.2;
+  font-size: $typographic-base-font-size * 1.392;
   @include line-height(1);
   @include margin-top(1.5);
   @include margin-bottom(.5);
 }
 
 h5 {
-  font-size: $typographic-base-font-size;
+  font-size: $typographic-base-font-size * 1.18;
   @include line-height(1);
   @include margin-top(2.5);
   @include margin-bottom(.5);
@@ -190,4 +214,57 @@ figcaption {
     height: auto;
     width: auto;
   }
+}
+
+
+
+/**********************************************************
+* PORTFOLIO JUNE 2021
+**********************************************************/
+
+.main-container {
+  display: flex;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.main-bontent {
+  flex: 1 1 80%;
+  background-color: var(--col-content-bg);
+  color: var(--col-content-text);
+  min-height: 100vh;
+}
+
+.index-bontent {
+  margin: 2rem;
+}
+
+.threejs-viz-container {
+  background-color: #000;
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+  margin: -2rem -2rem 2rem;
+}
+
+/**  SCROLLBAR STYLING  **********************************/
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--col-scrollbar-thumb) var(--col-scrollbar-track);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: var(--scrollbar-width);
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--col-scrollbar-track);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--col-scrollbar-thumb);
+  border: 1px solid var(--col-scrollbar-track);
 }

@@ -8,19 +8,14 @@ tags:
   - "painting"
   - "anime"
 thumbnail: media/artblog/sharingan/thumb.jpg
+heroes:
+  - media/artblog/sharingan/full.jpg
+  - media/artblog/sharingan/sasuke-table.jpg
 slug: "sharingan"
 draft: false
 ---
 
 I watched a Naruto marathon a few months ago, so I was destined to make some fanart eventually.
-
-Behold:
-
-![yep yep yep](/media/artblog/sharingan/full.jpg "yep yep")
-
-![yep yep yep](/media/artblog/sharingan/kakashi-closeup.jpg "yep yep")
-
-![yep yep yep](/media/artblog/sharingan/sasuke-closeup.jpg "yep yep")
 
 ## Materials/media
 
@@ -31,8 +26,6 @@ They're all acrylic on canvas (24" x 12"), finished with semi-gloss varnish.
 1. Canvas
 1. Acrylic paint
 1. Acrylic varnish
-
-![yep yep yep](/media/artblog/sharingan/sasuke-table.jpg "yep yep")
 
 ## The Process
 
