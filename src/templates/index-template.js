@@ -18,8 +18,7 @@ const IndexTemplate = ({ data, pageContext }: Props) => {
   const { edges } = data.allMarkdownRemark;
   console.debug(data, pageContext, edges.map((edge) => edge.node));
   const imagePaths = [
-    '/media/image-0.jpg',
-    '/media/image-1.jpg',
+    '/media/biz-1.jpg',
   ]
 
   return (

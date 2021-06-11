@@ -21,7 +21,7 @@ const NavMenu = ({ posts, selected, isIndex }: Props) => {
       <nav className={styles["nav-menu"]}>
         <div className={homeItemStyle}>
           <Link to="/">
-            <img src="https://picsum.photos/96" className={styles["nav-item__img"]} />
+            <img src="/profile-pic.jpg" className={styles["nav-item__img"]} />
           </Link>
         </div>
 
