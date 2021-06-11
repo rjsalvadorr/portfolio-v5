@@ -30,7 +30,6 @@ const PageTemplate = ({ data }: Props) => {
         </video>
       </div>
       <div className="main-content">
-        <Sidebar />
         <Page title={pageTitle}>
           <div dangerouslySetInnerHTML={{ __html: pageBody }} />
         </Page>
