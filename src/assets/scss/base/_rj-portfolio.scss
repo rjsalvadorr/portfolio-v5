@@ -1,24 +1,25 @@
 @import '../mixins';
 
 :root {
-  --col-accent: #ffb400;
-  --col-accent2: #ea5455;
-
-  --col-main-bg: #131b25;
+  --col-main-bg: #17212e;
   --col-main-text: #eeeeee;
+  --col-alt-bg: #202d3f;
+  --col-dark-bg: #0f151d;
+  --col-accent: #EA5455;
 
-  --col-header-bg: #243347;
-  --col-header-accent: var(--col-accent2);
-  
   --col-content-bg: #f6f6f6;
-  --col-content-text: #111111;
-  --col-highlight-text: var(--col-header-bg);
+  --col-content-text: #343434;
+  --col-content-highlight: var(--col-accent);
+  
+  --col-header-bg: var(--col-alt-bg);
+  --col-header-accent: var(--col-accent);
 
   --col-scrollbar-track: var(--col-accent);
-  --col-scrollbar-thumb: var(--col-header-bg);
-  --col-nav-selected: var(--col-accent2);
-
+  --col-scrollbar-thumb: var(--col-main-bg);
   --scrollbar-width: 9px;
+
+  --col-nav-bg: var(--col-alt-bg);
+  --col-nav-selected: var(--col-accent);
 }
 
 /** 
@@ -227,6 +228,7 @@ figcaption {
   display: flex;
   max-width: 1280px;
   margin: 0 auto;
+  @include large-box-shadow(var(--col-dark-bg));
 }
 
 .main-bontent {

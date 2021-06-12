@@ -15,7 +15,7 @@ slug: "sharingan"
 draft: false
 ---
 
-I watched a Naruto marathon a few months ago, so I was destined to make some fanart eventually.
+This painting series was inspired by the Naruto marathon I watched a few months ago.
 
 ## Materials/media
 
