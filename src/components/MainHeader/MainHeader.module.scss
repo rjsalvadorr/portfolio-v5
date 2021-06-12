@@ -4,7 +4,7 @@
 .main-header {
   color: var(--col-main-text);
   background-color: var(--col-header-bg);
-  padding: 1.5rem 2rem 2rem;
+  padding: 1.5rem;
 
   &__info {
     color: var(--col-header-accent);
@@ -18,11 +18,16 @@
     padding: 0;
   }
 
+  &__title {
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+
   &__info {
     text-transform: uppercase;
     font-size: $typographic-small-font-size - 1px;
     letter-spacing: 0.8px;
-    line-height: 1;
+    line-height: 1.1rem;
     margin: 0.1rem 0 0.4rem;
   }
 
@@ -31,6 +36,16 @@
 
     &--index {
       color: var(--col-header-accent);
+    }
+  }
+}
+
+@media (min-width: 501px) {
+  .main-header {
+    padding: 1.5rem 2rem 2rem;
+
+    &__title {
+      margin-bottom: 0.75rem;
     }
   }
 }

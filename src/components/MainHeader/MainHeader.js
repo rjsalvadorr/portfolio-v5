@@ -30,18 +30,18 @@ const MainHeader = ({
     <div className={styles["main-header"]}>
       <h1 className={styles["main-header__title"]}>{title}</h1>
       <p className={styles["main-header__info"]}>
+        {category && 
+          <span className={styles["main-header__category"]}>{category}<br /></span>
+        }
         {date && !hideDate &&
           <span className={styles["main-header__date"]}>
-            { new Date(date).toLocaleDateString('en-US', { year: 'numeric', month: 'short' })}&nbsp; — &nbsp;
+            { new Date(date).toLocaleDateString('en-US', { year: 'numeric', month: 'short' })}
           </span>
         }
         {hideDate && subtitle &&
           <span className={styles["main-header__date"]}>
-            {subtitle}&nbsp; — &nbsp;
+            {subtitle}
           </span>
-        }
-        {category && 
-          <span className={styles["main-header__category"]}>{category}</span>
         }
       </p>
       <p className={detailStyle}>

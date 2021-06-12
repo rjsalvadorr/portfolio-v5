@@ -56,35 +56,35 @@ h6 {
 }
 
 h1 {
-  font-size: $typographic-base-font-size * 2.288;
+  font-size: $typographic-base-font-size * 1.802;
   @include line-height(2);
   @include margin-top(4);
   @include margin-bottom(1);
 }
 
 h2 {
-  font-size: $typographic-base-font-size * 1.939;
+  font-size: $typographic-base-font-size * 1.602;
   @include line-height(1.5);
   @include margin-top(2);
   @include margin-bottom(.5);
 }
 
 h3 {
-  font-size: $typographic-base-font-size * 1.643;
+  font-size: $typographic-base-font-size * 1.424;
   @include line-height(1);
   @include margin-top(2);
   @include margin-bottom(.5);
 }
 
 h4 {
-  font-size: $typographic-base-font-size * 1.392;
+  font-size: $typographic-base-font-size * 1.266;
   @include line-height(1);
   @include margin-top(1.5);
   @include margin-bottom(.5);
 }
 
 h5 {
-  font-size: $typographic-base-font-size * 1.18;
+  font-size: $typographic-base-font-size * 1.125;
   @include line-height(1);
   @include margin-top(2.5);
   @include margin-bottom(.5);
@@ -149,6 +149,7 @@ ul {
 p {
   @include line-height(1);
   @include margin-bottom(1);
+  margin-top: 0;
 }
 
 blockquote {
@@ -236,15 +237,15 @@ figcaption {
 }
 
 .index-bontent {
-  margin: 2rem;
+  margin: 1.5rem;
 }
 
 .threejs-viz-container {
   background-color: #000;
   position: relative;
   overflow: hidden;
-  padding-top: 56.25%;
-  margin: -2rem -2rem 2rem;
+  padding-top: 100%;
+  margin: -1.5rem -1.5rem 1.5rem;
 }
 
 /**  SCROLLBAR STYLING  **********************************/
@@ -267,4 +268,42 @@ figcaption {
 *::-webkit-scrollbar-thumb {
   background-color: var(--col-scrollbar-thumb);
   border: 1px solid var(--col-scrollbar-track);
+}
+
+@media (min-width: 501px) {
+  h1 {
+    font-size: $typographic-base-font-size * 2.288;
+  }
+  
+  h2 {
+    font-size: $typographic-base-font-size * 1.939;
+  }
+  
+  h3 {
+    font-size: $typographic-base-font-size * 1.643;
+  }
+  
+  h4 {
+    font-size: $typographic-base-font-size * 1.392;
+  }
+  
+  h5 {
+    font-size: $typographic-base-font-size * 1.18;
+  }
+  
+  h6 {
+    font-size: $typographic-base-font-size;
+  }
+
+  .threejs-viz-container {
+    padding-top: 56.25%;
+  }
+
+  .index-bontent {
+    margin: 2rem;
+  }
+  
+  .threejs-viz-container {
+    margin: -2rem -2rem 2rem;
+  }
 }

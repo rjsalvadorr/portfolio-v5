@@ -37,7 +37,7 @@ With this project, I needed to figure out two things, and all the hard stuff was
 
 ## Results
 
-Take a look at [rjsalvadorr.github.io/guitarragrams/](https://rjsalvadorr.github.io/guitarragrams/)  
-For more info, check out the project repository at [github.com/rjsalvadorr/guitarragrams](https://github.com/rjsalvadorr/guitarragrams)
+Take a look at [Guitarragrams](https://rjsalvadorr.github.io/guitarragrams/)  
+For more info, check out the project repository at [github](https://github.com/rjsalvadorr/guitarragrams)
 
 I'm happy with this project! I still use it from time to time when I want to play around with chord voicings.

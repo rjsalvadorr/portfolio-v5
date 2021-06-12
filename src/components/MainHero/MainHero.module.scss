@@ -3,7 +3,7 @@
 
 .main-hero {
   background-color: #000;
-  height: 50vh;
+  height: 30vh;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -11,5 +11,12 @@
   &__img {
     object-fit: cover;
     height: 100%;
+  }
+}
+
+@media (min-width: 501px) {
+  .main-hero {
+    background-color: #000;
+    height: 50vh;
   }
 }

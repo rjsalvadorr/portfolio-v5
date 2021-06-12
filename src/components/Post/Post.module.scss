@@ -3,9 +3,15 @@
 
 .post {
   color: var(--col-content-text);
-  padding: 2rem;
+  padding: 1.5rem;
 
   a {
     color: var(--col-highlight-text)
+  }
+}
+
+@media (min-width: 501px) {
+  .post {
+    padding: 2rem;
   }
 }
