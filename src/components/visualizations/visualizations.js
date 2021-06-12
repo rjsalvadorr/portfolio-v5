@@ -24,7 +24,7 @@ class Visualizations extends React.Component {
     try {
       this.setState ({overlayOff: true});
     } catch (e) {
-      console.log ("Couldn't update state properly");
+      console.log ("Visualization failed to load: Couldn't update state properly");
     }
   }
 
@@ -32,7 +32,7 @@ class Visualizations extends React.Component {
     try {
       this.setState ({overlayOff: false});
     } catch (e) {
-      console.log ("Couldn't update state properly");
+      console.log ("Visualization failed to load: Couldn't update state properly");
     }
   }
 
@@ -47,7 +47,7 @@ class Visualizations extends React.Component {
         currentVisual: threeUtils.getRandomInt(1, 10),
       });
     } catch (e) {
-      console.log ("Couldn't update state properly");
+      console.log ("Visualization failed to load: Couldn't update state properly");
     }
   }
 

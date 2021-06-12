@@ -16,7 +16,7 @@ const NavMenu = ({ posts, selected, isIndex }: Props) => {
   }
   homeItemStyle += ' ' + styles["nav-item--svg"];
   homeItemStyle += ' ' + styles["nav-item--home"];
-  console.log('NavMenu', posts, selected, isIndex, selectedSlug);
+  // console.log('NavMenu', posts, selected, isIndex, selectedSlug);
 
   return (
     <div className={styles["nav-container"]}>

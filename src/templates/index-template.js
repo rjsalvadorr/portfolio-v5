@@ -30,10 +30,12 @@ const IndexTemplate = ({ data, pageContext }: Props) => {
           <MainHero paths={imagePaths} />
           <div className="index-bontent">
             <p>
-              Hi, I'm a software developer with 6 years of experience in the web-dev industry. 
-              Currently, I'm transitioning into a career in architecture technology, but 
-              I'm generally available for part-time software work or small contracts.<br />
-              Feel free to check out my <a href="/rj-salvador-resume-2021-06.pdf" target="_blank">resume</a> for more 
+              Hi, I'm a software developer with 6 years of experience in Toronto's web-dev
+              industry. Currently, I'm back in college studying architecture technology, but
+              I'm available for part-time software work or small contracts.
+            </p>
+            <p>
+              Feel free to check out my <a href="/rj-salvador-resume-2021-06.pdf" target="_blank">resum&eacute;</a> for more 
               details. If you'd like to get in touch, drop me a line at <Link to="https://www.linkedin.com/in/rjsalvadorr/">LinkedIn</Link>
             </p>
           </div>

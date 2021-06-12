@@ -20,7 +20,7 @@ const MainHeader = ({
   isIndex,
   hideDate
 }: Props) => {
-  console.log('MainHeader', title, subtitle, date, category, blurb, isIndex, hideDate);
+  // console.log('MainHeader', title, subtitle, date, category, blurb, isIndex, hideDate);
   let detailStyle = styles["main-header__details"];
   if (isIndex) {
     detailStyle += ` ${styles["main-header__details--index"]}`;

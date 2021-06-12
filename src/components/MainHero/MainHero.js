@@ -7,7 +7,7 @@ type Props = {
 };
 
 const MainHero = ({ paths }: Props) => {
-  console.log('MainHero', paths);
+  // console.log('MainHero', paths);
 
   if (isEmpty(paths)) {
     return null;
